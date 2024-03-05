@@ -1,9 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 * { box-sizing: border-box;}
+body {
+    min-width: 320px;
+}
 .base-color{
     background-color: #454545;
     color: whitesmoke !important;
 }
 .test {
-    border: 1px solid red;
+    border: 1px solid red !important;
 }

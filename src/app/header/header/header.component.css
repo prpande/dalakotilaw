@@ -12,3 +12,12 @@
         text-shadow: 0px 0px 10px rgb(245, 245, 245);
     }
 }
+
+img{
+    width: clamp(35px,4vw,70px);
+    height: clamp(35px,4vw,70px);
+}
+.site-title{
+    font-size: clamp(1.15rem,2vw, 2rem);
+    font-weight: bold;
+}

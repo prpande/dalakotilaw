@@ -1,12 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
-* { box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3f51b5;
+    --accent-color: #ff4081;
+}
+
 body {
     min-width: 320px;
 }
-.base-color{
-    background-color: #454545;
-    color: whitesmoke !important;
+
+.base-color {
+    background-color: var(--primary-color);
+    color: #f5f5f5 !important;
 }
+
 .test {
     border: 1px solid red !important;
 }
+
+@font-face {
+    font-family: hyperion;
+    src: url(assets/fonts/Hyperion.otf);
+}
+
+.hyperion {
+    font-family: hyperion, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: oxanium;
+    src: url(assets/fonts/Oxanium.ttf);
+}
+
+.oxanium {
+    font-family: oxanium, Arial, Helvetica, sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

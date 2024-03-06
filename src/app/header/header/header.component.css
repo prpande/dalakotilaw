@@ -9,15 +9,20 @@
 .nav-item:hover {
     .nav-link {
         border-bottom: 1px solid whitesmoke;
-        text-shadow: 0px 0px 10px rgb(245, 245, 245);
+        text-shadow: 1px 1px 2px black, 0px 0px 1rem #ff4081;
     }
 }
 
 img{
-    width: clamp(35px,4vw,70px);
-    height: clamp(35px,4vw,70px);
+    width: clamp(50px,6vw,100px);
+    height: clamp(50px,6vw,100px);
+}
+.sub-title{
+    font-size: clamp(0.75rem,2.5vw,1.3rem);
 }
 .site-title{
     font-size: clamp(1.15rem,2vw, 2rem);
     font-weight: bold;
+    letter-spacing: .1rem;
+    font-variant: small-caps;
 }

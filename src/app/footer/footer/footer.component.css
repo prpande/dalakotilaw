@@ -1,3 +1,9 @@
 p {
-    font-size: clamp(0.75rem,2.5vw,1rem);
+    font-size: clamp(0.75rem, 2.5vw, 1rem);
+}
+
+.address-link:hover {
+    .map-icon {
+        text-shadow: 1px 1px 2px black, 0px 0px 1rem #ff4081;
+    }
 }

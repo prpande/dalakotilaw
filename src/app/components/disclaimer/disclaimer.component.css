@@ -1,6 +1,7 @@
 .dialog-title{
     font-size: clamp(1.2rem,2.5vw, 2rem);
     font-variant: small-caps;
+    border-bottom: 2px solid black;
 }
 .dialog-content{
     font-size: clamp(0.7rem, 1.5vw, 1rem);

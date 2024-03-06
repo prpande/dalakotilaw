@@ -10,7 +10,7 @@ export class DisclaimerService {
 
   constructor(private disclaimerDialog: MatDialog) { }
   openDisclaimer(): Observable<boolean>{
-    const dialogRef = this.disclaimerDialog.open(DisclaimerComponent, {width: '70vw', minWidth: '340px', maxWidth: '1000px'});
+    const dialogRef = this.disclaimerDialog.open(DisclaimerComponent, {width: '70vw', minWidth: '340px', maxWidth: '1000px', maxHeight: '80vh'});
     return dialogRef.afterClosed();
   }
 }

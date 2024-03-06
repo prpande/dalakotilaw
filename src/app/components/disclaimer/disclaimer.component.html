@@ -1,0 +1,24 @@
+<div class="card dialog-box p-3">
+    <div class="container">
+        <div class="h3 text-decoration-underline dialog-title">
+            {{title}}
+        </div>
+        <div class="px-lg-2">
+            <div *ngFor="let d of disclaimers" class="dialog-content my-2">
+                {{d}}
+            </div>
+        </div>
+        <div class="text-center my-2">
+            <mat-checkbox [(ngModel)]="accepted" color="accent"><strong>I Accept</strong></mat-checkbox>
+        </div>
+        <div class="d-flex justify-content-evenly">
+            <div class="">
+                <button mat-raised-button color="primary" [disabled]="!accepted" (click)="onAccept()">Proceed to
+                    Website</button>
+            </div>
+            <div class="">
+                <button mat-raised-button color="warn" (click)="onDecline()">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>

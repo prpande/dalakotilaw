@@ -1,0 +1,11 @@
+.dialog-title{
+    font-size: clamp(1.2rem,2.5vw, 2rem);
+    font-variant: small-caps;
+}
+.dialog-content{
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+}
+.dialog-box {
+    border: 3px solid whitesmoke;
+    box-shadow: 0 0px 20px 20px #35393d;
+}

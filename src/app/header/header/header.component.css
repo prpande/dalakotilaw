@@ -4,6 +4,7 @@
 
 .nav-link {
     width: auto;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .nav-item:hover {
@@ -14,8 +15,8 @@
 }
 
 img{
-    width: clamp(50px,6vw,100px);
-    height: clamp(50px,6vw,100px);
+    width: clamp(50px,6vw,77px);
+    height: clamp(50px,6vw,77px);
 }
 .sub-title{
     font-size: clamp(0.75rem,1.5vw,1.3rem);

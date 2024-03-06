@@ -22,15 +22,6 @@ body {
 }
 
 @font-face {
-    font-family: hyperion;
-    src: url(assets/fonts/Hyperion.otf);
-}
-
-.hyperion {
-    font-family: hyperion, Arial, Helvetica, sans-serif;
-}
-
-@font-face {
     font-family: oxanium;
     src: url(assets/fonts/Oxanium.ttf);
 }

@@ -12,11 +12,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PracticesComponent } from './components/practices/practices.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DisclaimerComponent
+    DisclaimerComponent,
+    HomeComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    PracticesComponent
   ],
   imports: [
     BrowserModule,

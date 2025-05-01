@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DisclaimerService } from 'src/app/components/disclaimer/disclaimer.service';
 import { EmailService } from 'src/app/contact/services/email.service';
+import { DisclaimerCheckService } from 'src/app/services/disclaimer-check.service';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,14 @@ import { EmailService } from 'src/app/contact/services/email.service';
 })
 export class HeaderComponent implements OnInit{
   headerClass = "base-color"
-  constructor(private disclaimerService: DisclaimerService, private emailService: EmailService){}
+  constructor(private disclaimerCheckSvc: DisclaimerCheckService,private disclaimerService: DisclaimerService, private emailService: EmailService){}
 
   ngOnInit(): void {
-    this.disclaimerService.openDisclaimer().subscribe( ()=>{
-      this.headerClass += " sticky-top";
-      this.emailService.sendTestEmail();
-    });
+    if(!this.disclaimerCheckSvc.DidShowDisclaimer) {
+      this.disclaimerService.openDisclaimer().subscribe( ()=>{
+        this.headerClass += " sticky-top";
+        this.emailService.sendTestEmail();
+      });
+    }
   }
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { DisclaimerCheckService } from 'src/app/services/disclaimer-check.service';
 
 @Component({
   selector: 'app-disclaimer',
@@ -24,11 +25,12 @@ export class DisclaimerComponent {
 
   accepted = false;
 
-  constructor(public dialogRef: MatDialogRef<DisclaimerComponent>) {
+  constructor(private disclaimerCheckSvc: DisclaimerCheckService,public dialogRef: MatDialogRef<DisclaimerComponent>) {
     dialogRef.disableClose = true;
   }
 
   onAccept(){
+    this.disclaimerCheckSvc.ShowDisclaimer();
     this.dialogRef.close(true);
   }
 

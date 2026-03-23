@@ -162,8 +162,14 @@
   "faqs.specific.q12": "Is every matter accepted for representation?",
   "faqs.specific.a12": "No. Representation depends on the nature of the matter, the documents available, conflict checks, urgency, forum, and whether the case is suitable for engagement after preliminary assessment.",
   "blog.title": "Blog",
-  "blog.coming_soon": "Coming Soon",
-  "blog.message": "We are working on bringing you insightful articles on legal topics. Please check back later.",
+  "home.blog.title": "Latest Articles",
+  "home.blog.view_all": "View All Articles",
+  "blog.back": "Back to Blog",
+  "blog.read_more": "Read More",
+  "blog.fallback_notice": "This article is not yet available in the selected language",
+  "blog.no_posts": "No articles yet. Check back soon.",
+  "blog.loading": "Loading article...",
+  "blog.not_found": "Article not found",
   "footer.copyright": "2026 Chamber of Aditi Dalakoti. All rights reserved.",
   "footer.disclaimer": "Disclaimer"
 }

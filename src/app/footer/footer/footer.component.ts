@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DisclaimerService } from 'src/app/components/disclaimer/disclaimer.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  constructor(private disclaimerService: DisclaimerService) {}
 
+  openDisclaimer(): void {
+    this.disclaimerService.openDisclaimer();
+  }
 }

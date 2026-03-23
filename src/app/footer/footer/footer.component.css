@@ -3,6 +3,15 @@ p {
     font-size: clamp(0.75rem, 2.5vw, 1rem);
 }
 
+.footer-link {
+    color: #f5f5f5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-link:hover {
+    color: #fff;
+}
+
 .address-link:hover {
     .map-icon {
         text-shadow: 1px 1px 2px black, 0px 0px 1rem #ff4081;

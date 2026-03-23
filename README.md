@@ -1,27 +1,58 @@
-# Dalakotilaw
+# Dalakoti Law
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Official website for **Dalakoti Law** ([dalakotilaw.com](https://dalakotilaw.com)) — the online presence of Chamber of Aditi Dalakoti.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Framework:** Angular 16
+- **UI:** Angular Material + Bootstrap 5
+- **Language:** TypeScript
+- **Deployment:** GitHub Pages
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install
+ng serve
+```
 
-## Build
+Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Build & Deploy
 
-## Running unit tests
+```bash
+ng build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Build output goes to `dist/dalakotilaw/`. To deploy:
 
-## Running end-to-end tests
+1. Copy build output to `docs/`
+2. Copy `docs/index.html` to `docs/404.html` (enables SPA routing on GitHub Pages)
+3. Ensure `docs/CNAME` exists with `dalakotilaw.com`
+4. Commit and push to `master`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project Structure
 
-## Further help
+```
+src/
+├── app/
+│   ├── components/     # Page components (home, about, blog, contact, practices, disclaimer)
+│   ├── header/         # Header module
+│   ├── footer/         # Footer module
+│   ├── contact/        # Contact feature module
+│   └── services/       # Application services
+├── assets/
+│   ├── i18n/           # Translation files (en.json, hi.json)
+│   ├── images/         # Static images
+│   └── fonts/          # Custom fonts
+info/                   # Markdown content source files
+docs/                   # Built output served by GitHub Pages (do not edit directly)
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Testing
+
+```bash
+ng test
+```
+
+Runs unit tests via Karma/Jasmine.

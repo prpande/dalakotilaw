@@ -24,10 +24,12 @@
                         <li class="nav-item"><a routerLink="/faqs" class="nav-link base-color">{{ 'nav.faqs' | translate }}</a></li>
                         <li class="nav-item"><a routerLink="/blog" class="nav-link base-color">{{ 'nav.blog' | translate }}</a></li>
                         <li class="nav-item"><a routerLink="/contact" class="nav-link base-color">{{ 'nav.contact' | translate }}</a></li>
-                        <li class="nav-item">
-                            <button class="btn nav-link base-color lang-toggle" (click)="toggleLanguage()">
-                                {{ translationService.currentLanguage === 'en' ? 'HI' : 'EN' }}
-                            </button>
+                        <li class="nav-item d-flex align-items-center ms-lg-2">
+                            <span class="lang-label" [class.active]="translationService.currentLanguage === 'en'">EN</span>
+                            <div class="lang-switch" (click)="toggleLanguage()" [class.hindi]="translationService.currentLanguage === 'hi'">
+                                <div class="lang-slider"></div>
+                            </div>
+                            <span class="lang-label" [class.active]="translationService.currentLanguage === 'hi'">हिं</span>
                         </li>
                     </ul>
                 </div>

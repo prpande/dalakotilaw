@@ -15,7 +15,7 @@
         <p class="practice-summary">{{ area.summaryKey | translate }}</p>
         <div *ngIf="area.details.length > 0" class="practice-details mt-3">
           <div *ngFor="let detail of area.details" class="detail-item mb-3">
-            <h6>{{ detail.titleKey | translate }}</h6>
+            <h4 class="detail-title">{{ detail.titleKey | translate }}</h4>
             <p>{{ detail.textKey | translate }}</p>
           </div>
         </div>

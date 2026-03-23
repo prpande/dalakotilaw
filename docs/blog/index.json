@@ -1,1 +1,88 @@
-[]
+[
+  {
+    "slug": "civil-vs-criminal",
+    "date": "2026-03-20",
+    "image": "civil-vs-criminal.jpg",
+    "tags": [
+      "civil",
+      "criminal"
+    ],
+    "en": {
+      "title": "Civil Dispute or Criminal Case? Understanding the Difference",
+      "summary": "Not every serious dispute is a criminal case. Learn how to correctly classify financial and property conflicts."
+    },
+    "hi": {
+      "title": "दीवानी विवाद या आपराधिक मामला? अंतर को समझना",
+      "summary": "हर गंभीर विवाद आपराधिक मामला नहीं होता। वित्तीय और संपत्ति संघर्षों को सही ढंग से वर्गीकृत करना सीखें।"
+    }
+  },
+  {
+    "slug": "title-search",
+    "date": "2026-03-18",
+    "image": "title-search.jpg",
+    "tags": [
+      "property",
+      "banking"
+    ],
+    "en": {
+      "title": "Why Title Search Matters Before Mortgage, Purchase, or Loan Sanction",
+      "summary": "Title scrutiny is one of the most important risk-control steps in any property transaction or mortgage creation."
+    },
+    "hi": {
+      "title": "बंधक, खरीद, या ऋण स्वीकृति से पहले टाइटल सर्च क्यों महत्वपूर्ण है",
+      "summary": "किसी भी संपत्ति लेन-देन या बंधक निर्माण में टाइटल स्क्रूटिनी सबसे महत्वपूर्ण जोखिम-नियंत्रण चरणों में से एक है।"
+    }
+  },
+  {
+    "slug": "charge-sheet-response",
+    "date": "2026-03-15",
+    "image": "charge-sheet-response.jpg",
+    "tags": [
+      "banking",
+      "disciplinary"
+    ],
+    "en": {
+      "title": "What to Do After Receiving a Charge Sheet or Show Cause Notice",
+      "summary": "A practical guide for bank officers on how to respond to disciplinary proceedings carefully and effectively."
+    },
+    "hi": {
+      "title": "चार्जशीट या शो कॉज नोटिस मिलने पर क्या करें",
+      "summary": "बैंक अधिकारियों के लिए अनुशासनात्मक कार्यवाही का सावधानी और प्रभावी ढंग से जवाब देने की व्यावहारिक मार्गदर्शिका।"
+    }
+  },
+  {
+    "slug": "documentation-mistakes",
+    "date": "2026-03-12",
+    "image": "documentation-mistakes.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "Common Documentation Mistakes in Banking and Recovery Matters",
+      "summary": "In banking and recovery work, documents do not merely support a case — they often become the case."
+    },
+    "hi": {
+      "title": "बैंकिंग और रिकवरी मामलों में आम दस्तावेजी गलतियाँ",
+      "summary": "बैंकिंग और रिकवरी कार्य में दस्तावेज केवल किसी मामले का समर्थन नहीं करते — बहुत बार वही स्वयं मामला बन जाते हैं।"
+    }
+  },
+  {
+    "slug": "recovery-action-guide",
+    "date": "2026-03-10",
+    "image": "recovery-action-guide.jpg",
+    "tags": [
+      "banking",
+      "recovery",
+      "civil"
+    ],
+    "en": {
+      "title": "Borrowers, Guarantors, and Recovery Action: A Practical Guide",
+      "summary": "A practical guide to understanding rights, duties, and common misunderstandings in banking recovery."
+    },
+    "hi": {
+      "title": "उधारकर्ता, गारंटर, और रिकवरी कार्रवाई: एक व्यावहारिक मार्गदर्शिका",
+      "summary": "बैंकिंग रिकवरी में अधिकारों, दायित्वों और सामान्य गलतफहमियों को समझने की व्यावहारिक मार्गदर्शिका।"
+    }
+  }
+]

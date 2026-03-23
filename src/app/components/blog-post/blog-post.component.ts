@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Subscription, switchMap } from 'rxjs';
+import { Subscription, combineLatest } from 'rxjs';
 import { BlogService } from '../../services/blog.service';
 import { TranslationService } from '../../services/translation.service';
 import { BlogArticle } from '../../models/blog.models';
@@ -25,14 +25,15 @@ export class BlogPostComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.slug = this.route.snapshot.paramMap.get('slug') || '';
-    // lang$ is a BehaviorSubject — emits current value immediately, so no separate loadArticle call needed
     this.subs.push(
-      this.translationService.lang$.subscribe(lang => {
-        if (this.slug) {
-          this.loadArticle(lang);
+      combineLatest([this.route.paramMap, this.translationService.lang$]).subscribe(
+        ([params, lang]) => {
+          this.slug = params.get('slug') || '';
+          if (this.slug) {
+            this.loadArticle(lang);
+          }
         }
-      })
+      )
     );
   }
 

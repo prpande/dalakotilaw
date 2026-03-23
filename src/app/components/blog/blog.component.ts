@@ -13,6 +13,7 @@ export class BlogComponent implements OnInit, OnDestroy {
   posts: BlogPost[] = [];
   currentLang = 'en';
   private langSub!: Subscription;
+  private postsSub!: Subscription;
 
   constructor(
     private blogService: BlogService,
@@ -20,13 +21,14 @@ export class BlogComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.blogService.getPosts().subscribe(posts => this.posts = posts);
+    this.postsSub = this.blogService.getPosts().subscribe(posts => this.posts = posts);
     this.langSub = this.translationService.lang$.subscribe(
       lang => this.currentLang = lang
     );
   }
 
   ngOnDestroy(): void {
+    this.postsSub?.unsubscribe();
     this.langSub?.unsubscribe();
   }
 

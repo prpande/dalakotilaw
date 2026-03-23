@@ -63,11 +63,15 @@
   color: var(--text-body);
 }
 
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .article-body {
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-body);
-  max-width: 800px;
 }
 
 .article-body h2 {

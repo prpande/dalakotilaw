@@ -1,31 +1,105 @@
-<div class="page-header">
-  <div class="container"><h1>{{ 'about.title' | translate }}</h1></div>
+<!-- Page Banner -->
+<div class="about-banner">
+  <div class="container text-center">
+    <h1>{{ 'about.title' | translate }}</h1>
+  </div>
 </div>
+
+<!-- Profile Card -->
 <section class="section">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-4 text-center mb-4 mb-md-0">
-        <img src="assets/images/profile.jpg" alt="Aditi Dalakoti" class="profile-photo">
-      </div>
-      <div class="col-lg-7 col-md-8">
-        <p class="bio-text">{{ 'about.bio.p1' | translate }}</p>
-        <p class="bio-text">{{ 'about.bio.p2' | translate }}</p>
-        <p class="bio-text">{{ 'about.bio.p3' | translate }}</p>
+      <div class="col-lg-10">
+        <div class="card profile-card">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="assets/images/profile.jpg" alt="Aditi Dalakoti" class="profile-photo">
+                <h3 class="profile-name mt-3 oxanium">Aditi Dalakoti</h3>
+                <p class="profile-title">Advocate</p>
+              </div>
+              <div class="col-md-8">
+                <p class="bio-text">{{ 'about.bio.p1' | translate }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Bio Cards -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-5">
+        <div class="card bio-card h-100">
+          <div class="card-body">
+            <span class="fa-solid fa-briefcase bio-card-icon mb-3"></span>
+            <h5 class="bio-card-title">Practice</h5>
+            <p class="bio-text">{{ 'about.bio.p2' | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card bio-card h-100">
+          <div class="card-body">
+            <span class="fa-solid fa-handshake bio-card-icon mb-3"></span>
+            <h5 class="bio-card-title">Approach</h5>
+            <p class="bio-text">{{ 'about.bio.p3' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Qualifications Cards -->
 <section class="section section-dark">
   <div class="container">
-    <div class="row justify-content-center">
+    <h2 class="text-center mb-4">{{ 'about.qualifications.title' | translate }}</h2>
+
+    <!-- Bar Enrollment -->
+    <div class="row justify-content-center mb-4">
       <div class="col-lg-8">
-        <h2 class="mb-4">{{ 'about.qualifications.title' | translate }}</h2>
-        <p class="mb-3">{{ 'about.qualifications.bar' | translate }}</p>
-        <ul class="qualifications-list">
-          <li>{{ 'about.qualifications.jd' | translate }}</li>
-          <li>{{ 'about.qualifications.llm' | translate }}</li>
-          <li>{{ 'about.qualifications.llb' | translate }}</li>
-        </ul>
+        <div class="card bar-card">
+          <div class="card-body d-flex align-items-center">
+            <span class="fa-solid fa-scale-balanced qual-icon me-3"></span>
+            <p class="mb-0">{{ 'about.qualifications.bar' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Degree Cards -->
+    <div class="row justify-content-center g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="card qual-card h-100 text-center">
+          <div class="card-body">
+            <span class="fa-solid fa-graduation-cap qual-icon mb-3"></span>
+            <h6 class="qual-degree">Juris Doctor</h6>
+            <p class="qual-school">University of San Francisco School of Law</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card qual-card h-100 text-center">
+          <div class="card-body">
+            <span class="fa-solid fa-graduation-cap qual-icon mb-3"></span>
+            <h6 class="qual-degree">LL.M. in Human Rights</h6>
+            <p class="qual-school">Indian Law Institute, New Delhi</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card qual-card h-100 text-center">
+          <div class="card-body">
+            <span class="fa-solid fa-graduation-cap qual-icon mb-3"></span>
+            <h6 class="qual-degree">LL.B. (Honours)</h6>
+            <p class="qual-school">Guru Gobind Singh Indraprastha University</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

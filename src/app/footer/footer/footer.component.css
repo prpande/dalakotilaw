@@ -4,16 +4,18 @@ p {
 }
 
 .footer-link {
-    color: #f5f5f5;
+    color: var(--accent-color);
     text-decoration: underline;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 .footer-link:hover {
-    color: #fff;
+    color: #e0c068;
 }
 
 .address-link:hover {
     .map-icon {
-        text-shadow: 1px 1px 2px black, 0px 0px 1rem #ff4081;
+        color: var(--accent-color);
+        text-shadow: 0px 0px 0.5rem var(--accent-color);
     }
 }

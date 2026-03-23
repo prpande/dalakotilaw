@@ -4,14 +4,14 @@
 
 .nav-link {
     width: auto;
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-item:hover {
-    .nav-link {
-        border-bottom: 1px solid whitesmoke;
-        text-shadow: 1px 1px 2px black, 0px 0px 1rem var(--accent-color);
-    }
+.nav-item:hover .nav-link,
+.nav-item .nav-link.active {
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--accent-color) !important;
 }
 
 img{
@@ -38,7 +38,7 @@ img{
     transition: background 0.3s ease;
 }
 .lang-switch.hindi {
-    background: rgba(255,255,255,0.5);
+    background: var(--accent-color);
 }
 .lang-slider {
     width: 18px;
@@ -62,5 +62,5 @@ img{
     user-select: none;
 }
 .lang-label.active {
-    color: #fff;
+    color: var(--accent-color);
 }

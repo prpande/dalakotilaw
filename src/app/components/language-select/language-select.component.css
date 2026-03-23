@@ -1,2 +1,9 @@
-.language-dialog h2 { font-size: 1.5rem; font-weight: 500; }
-.lang-btn { min-width: 120px; font-size: 1.1rem; padding: 0.5rem 1.5rem; }
+.language-dialog h2 { font-size: 1.5rem; font-weight: 500; color: var(--primary-color); }
+.lang-btn {
+  min-width: 120px;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--accent-color) !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}

@@ -11,3 +11,17 @@
     border: 3px solid whitesmoke;
     box-shadow: 0 0px 20px 20px #35393d;
 }
+.btn-accept {
+    background-color: var(--accent-color) !important;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+.btn-accept:disabled {
+    background-color: #e0d6b8 !important;
+    color: #999 !important;
+}
+.btn-decline {
+    background-color: transparent !important;
+    color: #c62828 !important;
+    border: 1px solid #c62828 !important;
+}

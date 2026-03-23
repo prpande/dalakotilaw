@@ -5,14 +5,18 @@ import { Injectable } from '@angular/core';
 })
 export class DisclaimerCheckService {
 
-  private showedDisclaimer = false;
+  private static readonly STORAGE_KEY = 'disclaimerAccepted';
+  private static readonly TTL_MS = 30 * 60 * 1000; // 30 minutes
+
   constructor() { }
 
   ShowDisclaimer() {
-    this.showedDisclaimer = true;
+    localStorage.setItem(DisclaimerCheckService.STORAGE_KEY, Date.now().toString());
   }
 
   get DidShowDisclaimer() {
-    return this.showedDisclaimer;
+    const timestamp = localStorage.getItem(DisclaimerCheckService.STORAGE_KEY);
+    if (!timestamp) return false;
+    return (Date.now() - Number(timestamp)) < DisclaimerCheckService.TTL_MS;
   }
 }

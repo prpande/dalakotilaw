@@ -13,9 +13,12 @@ p {
     color: #e0c068;
 }
 
-.address-link:hover {
-    .map-icon {
-        color: var(--accent-color);
-        text-shadow: 0px 0px 0.5rem var(--accent-color);
-    }
+.address-link:hover .map-icon {
+    color: var(--accent-color);
+    text-shadow: 0px 0px 0.5rem var(--accent-color);
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+    margin: 0.75rem 0;
 }

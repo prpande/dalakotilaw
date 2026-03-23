@@ -1,6 +1,6 @@
 .hero-section {
   background: url('/assets/images/hero-bg.png') center/cover no-repeat;
-  background-color: #1a237e;
+  background-color: var(--primary-color);
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -32,13 +32,14 @@
 }
 .hero-cta {
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--primary-color);
   border: none;
   padding: 0.75rem 2rem;
+  font-weight: 600;
 }
 .hero-cta:hover {
-  background-color: #e91e63;
-  color: #fff;
+  background-color: #b8963f;
+  color: var(--primary-color);
 }
 .card-title {
   font-size: 1.25rem;

@@ -4,13 +4,13 @@
             <div class=" d-flex px-2 ">
                 <div class=" align-self-center">
                     <p class="mb-2">
-                        <span class="fa-solid fa-phone"></span> <span class="">
-                            +91-8755501957
+                        <span class="fa-solid fa-phone"></span> <span>
+                            {{ 'contact.office.phone' | translate }}
                         </span>
                     </p>
                     <p>
-                        <span class="fa-solid fa-envelope"></span> <span class="">
-                            dalakoti.aditi@outlook.com
+                        <span class="fa-solid fa-envelope"></span> <span>
+                            {{ 'contact.office.email' | translate }}
                         </span>
                     </p>
                 </div>
@@ -19,13 +19,10 @@
                 <div class="align-self-center m-0 p-0 d-flex">
                     <div class="align-self-center">
                         <p class="mb-2">
-                            <span class="fa-solid fa-copyright mx-1"></span> 2026 Chamber of Aditi Dalakoti.
-                        </p>
-                        <p class="mb-2">
-                            All rights reserved.
+                            <span class="fa-solid fa-copyright mx-1"></span> {{ 'footer.copyright' | translate }}
                         </p>
                         <p>
-                            <a class="footer-link" (click)="openDisclaimer()">Disclaimer</a>
+                            <a class="footer-link" (click)="openDisclaimer()">{{ 'footer.disclaimer' | translate }}</a>
                         </p>
                     </div>
                 </div>
@@ -38,13 +35,13 @@
                         </div>
                         <div class="align-self-center">
                             <p class="text-nowrap m-0">
-                                <span class="fa-solid fa-location-dot d-md-none text-danger mx-1"></span> Pilikothi Chauraha, Kaladhungi Road
+                                <span class="fa-solid fa-location-dot d-md-none text-danger mx-1"></span> {{ 'contact.office.address.line1' | translate }}
                             </p>
                             <p class="text-nowrap m-0">
-                                Haldwani, Uttarakhand
+                                {{ 'contact.office.address.line2' | translate }}
                             </p>
                             <p class="text-nowrap m-0">
-                                India - 263139
+                                {{ 'contact.office.address.line3' | translate }}
                             </p>
                         </div>
                     </a>
@@ -52,11 +49,11 @@
             </div>
         </div>
         <div class="d-lg-none text-center py-1">
-            <p >
-                <span class="fa-solid fa-copyright mx-1"></span> 2026 Chamber of Aditi Dalakoti. All rights reserved.
+            <p>
+                <span class="fa-solid fa-copyright mx-1"></span> {{ 'footer.copyright' | translate }}
             </p>
             <p>
-                <a class="footer-link" (click)="openDisclaimer()">Disclaimer</a>
+                <a class="footer-link" (click)="openDisclaimer()">{{ 'footer.disclaimer' | translate }}</a>
             </p>
         </div>
     </div>

@@ -45,6 +45,16 @@
   margin-bottom: 0;
 }
 
+.linkedin-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #0a66c2;
+  transition: color 0.3s ease;
+}
+.linkedin-link:hover {
+  color: #004182;
+}
+
 /* Bio Cards */
 .bio-card {
   border: none;

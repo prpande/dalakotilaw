@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
@@ -44,6 +45,7 @@ import { LanguageSelectComponent } from './components/language-select/language-s
     MatButtonModule,
     FormsModule,
     MatCheckboxModule,
+    MatExpansionModule,
     HttpClientModule,
     SharedModule
   ],

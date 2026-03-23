@@ -1,1 +1,25 @@
-<p>practices works!</p>
+<div class="page-header">
+  <div class="container">
+    <h1>{{ 'practices.title' | translate }}</h1>
+    <p>{{ 'practices.subtitle' | translate }}</p>
+  </div>
+</div>
+<section class="section">
+  <div class="container">
+    <mat-accordion multi>
+      <mat-expansion-panel *ngFor="let area of practiceAreas" [id]="area.id" class="mb-3">
+        <mat-expansion-panel-header>
+          <mat-panel-title><strong>{{ area.titleKey | translate }}</strong></mat-panel-title>
+          <mat-panel-description class="d-none d-md-block">{{ area.subtitleKey | translate }}</mat-panel-description>
+        </mat-expansion-panel-header>
+        <p class="practice-summary">{{ area.summaryKey | translate }}</p>
+        <div *ngIf="area.details.length > 0" class="practice-details mt-3">
+          <div *ngFor="let detail of area.details" class="detail-item mb-3">
+            <h6>{{ detail.titleKey | translate }}</h6>
+            <p>{{ detail.textKey | translate }}</p>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</section>

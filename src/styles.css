@@ -70,6 +70,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: #555;
   max-width: 700px;
   margin: 0 auto;
+  line-height: 2;
 }
 
 /* Gold accent utilities */

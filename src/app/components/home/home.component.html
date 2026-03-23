@@ -27,6 +27,30 @@
   </div>
 </section>
 
+<!-- Latest Articles -->
+<section class="section section-dark" *ngIf="latestPosts.length > 0">
+  <div class="container">
+    <h2 class="text-center mb-4">{{ 'home.blog.title' | translate }}</h2>
+    <div class="row g-3">
+      <div *ngFor="let post of latestPosts" class="col-12 col-md-6 col-lg-4">
+        <a [routerLink]="['/blog', post.slug]" class="blog-card-link">
+          <div class="card blog-card-sm">
+            <img [src]="getPostImageUrl(post)" [alt]="getPostTitle(post)" class="card-img-top blog-card-sm-img">
+            <div class="card-body p-3">
+              <div class="blog-card-sm-date">{{ post.date }}</div>
+              <h6 class="blog-card-sm-title">{{ getPostTitle(post) }}</h6>
+              <p class="blog-card-sm-summary">{{ getPostSummary(post) }}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a routerLink="/blog" class="btn btn-outline-accent">{{ 'home.blog.view_all' | translate }}</a>
+    </div>
+  </div>
+</section>
+
 <!-- CTA Section -->
 <section class="section section-primary text-center">
   <div class="container">

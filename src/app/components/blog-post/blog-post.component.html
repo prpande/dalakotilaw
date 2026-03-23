@@ -1,0 +1,41 @@
+<!-- Loading -->
+<section class="section text-center" *ngIf="loading">
+  <div class="container">
+    <p class="text-muted">{{ 'blog.loading' | translate }}</p>
+  </div>
+</section>
+
+<!-- Error -->
+<section class="section text-center" *ngIf="error && !loading">
+  <div class="container">
+    <h2>{{ 'blog.not_found' | translate }}</h2>
+    <a routerLink="/blog" class="btn btn-outline-accent mt-3">{{ 'blog.back' | translate }}</a>
+  </div>
+</section>
+
+<!-- Article -->
+<ng-container *ngIf="article && !loading && !error">
+  <div class="article-hero">
+    <img [src]="blogService.getImageUrl(article.post.image)" [alt]="getTitle()" class="article-hero-img">
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <a routerLink="/blog" class="article-back">&larr; {{ 'blog.back' | translate }}</a>
+
+      <div class="article-header">
+        <h1 class="article-title">{{ getTitle() }}</h1>
+        <div class="article-meta">
+          <span class="article-date">{{ article.post.date }}</span>
+          <span *ngFor="let tag of article.post.tags" class="article-tag">{{ tag }}</span>
+        </div>
+      </div>
+
+      <div *ngIf="isFallback" class="article-fallback-notice">
+        {{ 'blog.fallback_notice' | translate }}
+      </div>
+
+      <div class="article-body" [innerHTML]="article.htmlContent"></div>
+    </div>
+  </section>
+</ng-container>

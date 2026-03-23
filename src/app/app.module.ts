@@ -19,6 +19,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PracticesComponent } from './components/practices/practices.component';
 import { SharedModule } from './shared/shared.module';
@@ -33,6 +34,7 @@ import { FaqsComponent } from './components/faqs/faqs.component';
     HomeComponent,
     AboutComponent,
     BlogComponent,
+    BlogPostComponent,
     ContactComponent,
     PracticesComponent,
     LanguageSelectComponent,

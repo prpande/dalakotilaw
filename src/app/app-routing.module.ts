@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogPostComponent } from './components/blog-post/blog-post.component';
 import { PracticesComponent } from './components/practices/practices.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
@@ -18,7 +19,12 @@ const routes: Routes = [
   },
   {
     path: "blog",
-    component: BlogComponent
+    component: BlogComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: "blog/:slug",
+    component: BlogPostComponent
   },
   {
     path: "practices",

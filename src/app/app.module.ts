@@ -11,7 +11,9 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
@@ -48,6 +50,9 @@ import { FaqsComponent } from './components/faqs/faqs.component';
     FormsModule,
     MatCheckboxModule,
     MatExpansionModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
     HttpClientModule,
     SharedModule
   ],

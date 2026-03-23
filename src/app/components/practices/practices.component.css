@@ -1,3 +1,6 @@
-.practice-summary { font-size: 1.05rem; color: #444; }
-.detail-title { font-size: 1.15rem; font-weight: 600; color: var(--primary-color); margin-bottom: 0.5rem; }
-.detail-item p { color: #555; line-height: 1.7; font-size: 0.95rem; }
+::ng-deep .mat-expansion-panel-header-title {
+  font-size: 1.25rem;
+}
+.practice-summary { font-size: 1rem; color: #444; }
+.detail-title { font-size: 1.05rem; font-weight: 600; color: var(--primary-color); margin-bottom: 0.4rem; }
+.detail-item p { color: #555; line-height: 1.7; font-size: 0.92rem; }

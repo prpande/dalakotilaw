@@ -1,13 +1,34 @@
-<div class="page-header">
-  <div class="container"><h1>{{ 'blog.title' | translate }}</h1></div>
-</div>
-<section class="section text-center">
+<section class="page-header">
   <div class="container">
-    <div class="coming-soon">
-      <span class="fa-solid fa-pen-nib coming-icon mb-4"></span>
-      <h2>{{ 'blog.coming_soon' | translate }}</h2>
-      <p class="text-muted mt-3">{{ 'blog.message' | translate }}</p>
-      <a routerLink="/home" class="btn btn-outline-accent mt-4">Back to Home</a>
+    <h1>{{ 'blog.title' | translate }}</h1>
+  </div>
+</section>
+
+<section class="section" *ngIf="posts.length > 0">
+  <div class="container">
+    <div class="row g-4">
+      <div *ngFor="let post of posts" class="col-12 col-md-6 col-lg-4">
+        <a [routerLink]="['/blog', post.slug]" class="blog-card-link">
+          <div class="card blog-card">
+            <img [src]="getImageUrl(post)" [alt]="getTitle(post)" class="card-img-top blog-card-img">
+            <div class="card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-date">{{ post.date }}</span>
+                <span *ngFor="let tag of post.tags" class="blog-card-tag">{{ tag }}</span>
+              </div>
+              <h5 class="card-title">{{ getTitle(post) }}</h5>
+              <p class="card-text text-muted">{{ getSummary(post) }}</p>
+              <span class="blog-read-more">{{ 'blog.read_more' | translate }} &rarr;</span>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
+</section>
+
+<section class="section text-center" *ngIf="posts.length === 0">
+  <div class="container">
+    <p class="text-muted">{{ 'blog.no_posts' | translate }}</p>
   </div>
 </section>

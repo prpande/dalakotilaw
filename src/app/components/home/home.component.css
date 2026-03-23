@@ -56,6 +56,15 @@
   font-weight: 500;
   font-size: 0.9rem;
 }
+.cta-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.cta-btn:hover {
+  background-color: #b8963f;
+  color: var(--primary-color);
+}
 @media (max-width: 576px) {
   .hero-section { min-height: 50vh; }
   .hero-overlay { padding: 3rem 0; }

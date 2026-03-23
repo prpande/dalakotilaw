@@ -1,0 +1,28 @@
+name: Generate Blog Manifest
+
+on:
+  push:
+    branches: [master]
+    paths: ['docs/blog/posts/**']
+
+jobs:
+  generate-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install gray-matter
+        run: npm install gray-matter
+
+      - name: Generate manifest
+        run: node scripts/generate-blog-manifest.js
+
+      - name: Commit manifest
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-generate blog manifest [skip ci]"
+          file_pattern: docs/blog/index.json

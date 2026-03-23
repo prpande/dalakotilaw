@@ -10,7 +10,7 @@ p {
     transition: color 0.3s ease;
 }
 .footer-link:hover {
-    color: #e0c068;
+    color: #e6b830;
 }
 
 .address-link:hover .map-icon {

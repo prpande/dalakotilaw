@@ -18,6 +18,8 @@ import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PracticesComponent } from './components/practices/practices.component';
+import { SharedModule } from './shared/shared.module';
+import { LanguageSelectComponent } from './components/language-select/language-select.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { PracticesComponent } from './components/practices/practices.component';
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    PracticesComponent
+    PracticesComponent,
+    LanguageSelectComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { PracticesComponent } from './components/practices/practices.component';
     MatButtonModule,
     FormsModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [{
     provide: MatDialogRef,

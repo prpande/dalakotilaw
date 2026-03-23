@@ -30,6 +30,14 @@
                         <li class="nav-item">
                             <a routerLink="/contact" class="nav-link base-color">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a routerLink="/faqs" class="nav-link base-color">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn nav-link base-color lang-toggle" (click)="toggleLanguage()">
+                                {{ translationService.currentLanguage === 'en' ? 'HI' : 'EN' }}
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>

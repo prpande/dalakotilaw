@@ -112,16 +112,11 @@
   display: block;
 }
 
-.qual-degree {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 0.5rem;
-}
-
-.qual-school {
-  font-size: 0.9rem;
-  color: #666;
+.qual-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  line-height: 1.6;
   margin-bottom: 0;
 }
 

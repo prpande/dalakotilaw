@@ -1,3 +1,56 @@
-<h1>Dalakoti Law</h1>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam distinctio est quam iure. Voluptas dolores repudiandae voluptates odio sunt dicta. Incidunt quaerat explicabo vero soluta sequi voluptatum ipsa ratione dolor?</p>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="container text-center">
+      <p class="hero-subtitle">{{ 'home.hero.subtitle' | translate }}</p>
+      <h1 class="hero-title oxanium">{{ 'home.hero.title' | translate }}</h1>
+      <p class="hero-tagline">{{ 'home.hero.tagline' | translate }}</p>
+      <a routerLink="/contact" class="btn btn-lg hero-cta mt-3">{{ 'home.hero.cta' | translate }}</a>
+    </div>
+  </div>
+</section>
 
+<!-- Practice Area Cards -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-4">{{ 'home.practices.title' | translate }}</h2>
+    <div class="row g-4">
+      <div *ngFor="let area of practiceAreas" class="col-12 col-md-6 col-lg-4">
+        <div class="card practice-card p-4" (click)="navigateToPractice(area.id)">
+          <div class="card-body text-center">
+            <span [class]="area.icon + ' practice-icon mb-3'"></span>
+            <h5 class="card-title">{{ area.titleKey | translate }}</h5>
+            <p class="card-text text-muted">{{ area.summaryKey | translate }}</p>
+            <span class="practice-cta">{{ area.ctaKey | translate }} &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Blurb -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-4">{{ 'nav.about' | translate }}</h2>
+        <p>{{ 'home.about.text' | translate }}</p>
+        <p>{{ 'home.about.text2' | translate }}</p>
+        <p>{{ 'home.about.text3' | translate }}</p>
+        <div class="text-center mt-4">
+          <a routerLink="/about" class="btn btn-outline-primary">{{ 'home.about.cta' | translate }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section section-primary text-center">
+  <div class="container">
+    <h2 class="mb-3">{{ 'home.cta.title' | translate }}</h2>
+    <p class="mb-4">{{ 'home.cta.text' | translate }}</p>
+    <a routerLink="/contact" class="btn btn-lg btn-light">{{ 'home.cta.button' | translate }}</a>
+  </div>
+</section>

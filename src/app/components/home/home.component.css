@@ -1,0 +1,53 @@
+.hero-section {
+  background: linear-gradient(135deg, #1a237e 0%, #3f51b5 50%, #5c6bc0 100%);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+.hero-overlay {
+  width: 100%;
+  padding: 4rem 0;
+  color: #fff;
+}
+.hero-subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.25rem;
+}
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: bold;
+  font-variant: small-caps;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+.hero-tagline {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+.hero-cta {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+}
+.hero-cta:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+.practice-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  display: block;
+}
+.practice-cta {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+  .hero-section { min-height: 50vh; }
+  .hero-overlay { padding: 3rem 0; }
+}

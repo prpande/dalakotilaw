@@ -1,1 +1,29 @@
-<p>about works!</p>
+<div class="page-header">
+  <div class="container"><h1>{{ 'about.title' | translate }}</h1></div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <p class="bio-text">{{ 'about.bio.p1' | translate }}</p>
+        <p class="bio-text">{{ 'about.bio.p2' | translate }}</p>
+        <p class="bio-text">{{ 'about.bio.p3' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-dark">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="mb-4">{{ 'about.qualifications.title' | translate }}</h2>
+        <p class="mb-3">{{ 'about.qualifications.bar' | translate }}</p>
+        <ul class="qualifications-list">
+          <li>{{ 'about.qualifications.jd' | translate }}</li>
+          <li>{{ 'about.qualifications.llm' | translate }}</li>
+          <li>{{ 'about.qualifications.llb' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

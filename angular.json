@@ -23,7 +23,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              { "glob": "CNAME", "input": "src/assets", "output": "/" }
+              { "glob": "CNAME", "input": "src/assets", "output": "/" },
+              { "glob": "**/*", "input": "docs/blog", "output": "/blog" }
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",

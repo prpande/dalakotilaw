@@ -1,0 +1,2 @@
+.category-title { font-size: 1.3rem; font-weight: 600; color: var(--primary-color); padding-bottom: 0.5rem; border-bottom: 2px solid var(--primary-color); display: inline-block; }
+.faq-answer { line-height: 1.7; color: #555; }

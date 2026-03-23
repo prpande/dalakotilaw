@@ -21,6 +21,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PracticesComponent } from './components/practices/practices.component';
 import { SharedModule } from './shared/shared.module';
 import { LanguageSelectComponent } from './components/language-select/language-select.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { LanguageSelectComponent } from './components/language-select/language-s
     BlogComponent,
     ContactComponent,
     PracticesComponent,
-    LanguageSelectComponent
+    LanguageSelectComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,

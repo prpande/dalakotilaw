@@ -1,0 +1,18 @@
+<div class="page-header">
+  <div class="container"><h1>{{ 'faqs.title' | translate }}</h1></div>
+</div>
+<section class="section">
+  <div class="container">
+    <div *ngFor="let category of categories" class="faq-category mb-5">
+      <h3 class="category-title mb-3">{{ category.titleKey | translate }}</h3>
+      <mat-accordion>
+        <mat-expansion-panel *ngFor="let item of category.items" class="mb-2">
+          <mat-expansion-panel-header>
+            <mat-panel-title>{{ item.questionKey | translate }}</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p class="faq-answer">{{ item.answerKey | translate }}</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</section>

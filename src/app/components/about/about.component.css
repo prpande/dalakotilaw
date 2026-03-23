@@ -1,0 +1,139 @@
+/* Page Banner */
+.about-banner {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+  color: var(--text-white);
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+
+.about-banner h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Profile Card */
+.profile-card {
+  border: none;
+  border-left: 4px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  font-variant: small-caps;
+}
+
+.profile-title {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.linkedin-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--linkedin-color);
+  transition: color 0.3s ease;
+}
+.linkedin-link:hover {
+  color: var(--linkedin-hover);
+}
+
+/* Bio Cards */
+.bio-card {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  border-top: 3px solid var(--accent-color);
+}
+
+.bio-card-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  display: block;
+}
+
+.bio-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.bio-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+/* Bar Enrollment Card */
+.bar-card {
+  border: none;
+  background: var(--primary-color);
+  color: var(--text-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.bar-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bar-card .qual-icon {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  min-width: 2rem;
+}
+
+/* Qualification Cards */
+.qual-card {
+  border: none;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qual-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.qual-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  display: block;
+}
+
+.qual-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-body);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}

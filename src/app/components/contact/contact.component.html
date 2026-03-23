@@ -1,1 +1,68 @@
-<p>contact works!</p>
+<div class="page-header">
+  <div class="container"><h1>{{ 'contact.title' | translate }}</h1></div>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-12 col-md-7">
+        <div *ngIf="formState === 'success'" class="alert alert-success">
+          {{ 'contact.form.success' | translate }}
+          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">Send Another</button>
+        </div>
+        <div *ngIf="formState === 'error'" class="alert alert-danger">
+          {{ 'contact.form.error' | translate }}
+          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">Try Again</button>
+        </div>
+        <form *ngIf="formState === 'idle' || formState === 'submitting'" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>{{ 'contact.form.name' | translate }}</mat-label>
+            <input matInput formControlName="name">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>{{ 'contact.form.email' | translate }}</mat-label>
+            <input matInput formControlName="email" type="email">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>{{ 'contact.form.phone' | translate }}</mat-label>
+            <input matInput formControlName="phone" type="tel">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>{{ 'contact.form.subject' | translate }}</mat-label>
+            <input matInput formControlName="subject">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="w-100 mb-2">
+            <mat-label>{{ 'contact.form.message' | translate }}</mat-label>
+            <textarea matInput formControlName="message" rows="5"></textarea>
+          </mat-form-field>
+          <button mat-raised-button type="submit" [disabled]="contactForm.invalid || formState === 'submitting'" class="submit-btn">
+            {{ formState === 'submitting' ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
+          </button>
+        </form>
+      </div>
+      <div class="col-12 col-md-5">
+        <h3 class="mb-3">{{ 'contact.office.title' | translate }}</h3>
+        <div class="office-details mb-4">
+          <div class="detail-item mb-3">
+            <span class="fa-solid fa-location-dot text-danger me-2"></span>
+            <div>
+              <p class="mb-0">{{ 'contact.office.address.line1' | translate }}</p>
+              <p class="mb-0">{{ 'contact.office.address.line2' | translate }}</p>
+              <p class="mb-0">{{ 'contact.office.address.line3' | translate }}</p>
+            </div>
+          </div>
+          <div class="detail-item mb-3">
+            <span class="fa-solid fa-phone me-2"></span>
+            <span>{{ 'contact.office.phone' | translate }}</span>
+          </div>
+          <div class="detail-item mb-3">
+            <span class="fa-solid fa-envelope me-2"></span>
+            <span>{{ 'contact.office.email' | translate }}</span>
+          </div>
+        </div>
+        <div class="map-container">
+          <iframe src="https://maps.google.com/maps?q=29.219722,79.512944&z=17&output=embed" width="100%" height="300" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

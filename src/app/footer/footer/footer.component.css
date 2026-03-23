@@ -3,8 +3,22 @@ p {
     font-size: clamp(0.75rem, 2.5vw, 1rem);
 }
 
-.address-link:hover {
-    .map-icon {
-        text-shadow: 1px 1px 2px black, 0px 0px 1rem #ff4081;
-    }
+.footer-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.footer-link:hover {
+    color: var(--accent-light);
+}
+
+.address-link:hover .map-icon {
+    color: var(--accent-color);
+    text-shadow: 0px 0px 0.5rem var(--accent-color);
+}
+
+.footer-divider {
+    border-color: rgba(255,255,255,0.2);
+    margin: 0.75rem 0;
 }

@@ -1,3 +1,37 @@
-<h1>Dalakoti Law</h1>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam distinctio est quam iure. Voluptas dolores repudiandae voluptates odio sunt dicta. Incidunt quaerat explicabo vero soluta sequi voluptatum ipsa ratione dolor?</p>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="container text-center">
+      <p class="hero-tagline">{{ 'home.hero.tagline' | translate }}</p>
+      <a routerLink="/contact" class="btn btn-lg hero-cta mt-3">{{ 'home.hero.cta' | translate }}</a>
+    </div>
+  </div>
+</section>
 
+<!-- Practice Area Cards -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-4">{{ 'home.practices.title' | translate }}</h2>
+    <div class="row g-4">
+      <div *ngFor="let area of practiceAreas" class="col-12 col-md-6 col-lg-4">
+        <div class="card practice-card p-4" (click)="navigateToPractice(area.id)">
+          <div class="card-body text-center d-flex flex-column">
+            <span [class]="area.icon + ' practice-icon mb-3'"></span>
+            <h4 class="card-title">{{ area.titleKey | translate }}</h4>
+            <p class="card-text text-muted flex-grow-1">{{ area.summaryKey | translate }}</p>
+            <span class="practice-cta mt-auto">{{ area.ctaKey | translate }} &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section section-primary text-center">
+  <div class="container">
+    <h2 class="mb-3">{{ 'home.cta.title' | translate }}</h2>
+    <p class="mb-4">{{ 'home.cta.text' | translate }}</p>
+    <a routerLink="/contact" class="btn btn-lg cta-btn">{{ 'home.cta.button' | translate }}</a>
+  </div>
+</section>

@@ -18,17 +18,18 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item ">
-                            <a routerLink="/about" class="nav-link base-color">About</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a routerLink="/blog" class="nav-link base-color">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/practices" class="nav-link base-color">Practices</a>
-                        </li>
-                        <li class="nav-item">
-                            <a routerLink="/contact" class="nav-link base-color">Contact</a>
+                        <li class="nav-item"><a routerLink="/home" class="nav-link base-color">{{ 'nav.home' | translate }}</a></li>
+                        <li class="nav-item"><a routerLink="/about" class="nav-link base-color">{{ 'nav.about' | translate }}</a></li>
+                        <li class="nav-item"><a routerLink="/practices" class="nav-link base-color">{{ 'nav.practices' | translate }}</a></li>
+                        <li class="nav-item"><a routerLink="/faqs" class="nav-link base-color">{{ 'nav.faqs' | translate }}</a></li>
+                        <li class="nav-item"><a routerLink="/blog" class="nav-link base-color">{{ 'nav.blog' | translate }}</a></li>
+                        <li class="nav-item"><a routerLink="/contact" class="nav-link base-color">{{ 'nav.contact' | translate }}</a></li>
+                        <li class="nav-item d-flex align-items-center ms-lg-2">
+                            <span class="lang-label" [class.active]="translationService.currentLanguage === 'en'">EN</span>
+                            <div class="lang-switch" (click)="toggleLanguage()" [class.hindi]="translationService.currentLanguage === 'hi'">
+                                <div class="lang-slider"></div>
+                            </div>
+                            <span class="lang-label" [class.active]="translationService.currentLanguage === 'hi'">हिं</span>
                         </li>
                     </ul>
                 </div>

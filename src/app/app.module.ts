@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,13 +11,19 @@ import { DisclaimerComponent } from './components/disclaimer/disclaimer.componen
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PracticesComponent } from './components/practices/practices.component';
+import { SharedModule } from './shared/shared.module';
+import { LanguageSelectComponent } from './components/language-select/language-select.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 
 
 @NgModule({
@@ -27,7 +34,9 @@ import { PracticesComponent } from './components/practices/practices.component';
     AboutComponent,
     BlogComponent,
     ContactComponent,
-    PracticesComponent
+    PracticesComponent,
+    LanguageSelectComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +48,13 @@ import { PracticesComponent } from './components/practices/practices.component';
     MatIconModule,
     MatButtonModule,
     FormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    HttpClientModule,
+    SharedModule
   ],
   providers: [{
     provide: MatDialogRef,

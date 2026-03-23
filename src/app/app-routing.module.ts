@@ -5,6 +5,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { PracticesComponent } from './components/practices/practices.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 
 const routes: Routes = [
   {
@@ -28,13 +29,20 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
+    path: "faqs",
+    component: FaqsComponent
+  },
+  {
     path: "**",
     redirectTo: "/home"
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

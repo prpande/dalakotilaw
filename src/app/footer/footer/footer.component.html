@@ -1,65 +1,52 @@
-<div class="base-color py-2">
+<div class="base-color py-3">
     <div class="container">
-        <div class="d-flex justify-content-between py-1">
-            <div class=" d-flex px-2 ">
-                <div class=" align-self-center">
-                    <p class="mb-2">
-                        <span class="fa-solid fa-phone"></span> <span class="">
-                            +91-8755501957
-                        </span>
-                    </p>
-                    <p>
-                        <span class="fa-solid fa-envelope"></span> <span class="">
-                            dalakoti.aditi@outlook.com
-                        </span>
-                    </p>
-                </div>
+        <div class="row align-items-center py-1 d-none d-lg-flex">
+            <div class="col-lg-4">
+                <p class="mb-2">
+                    <span class="fa-solid fa-phone"></span>
+                    <span> {{ 'contact.office.phone' | translate }}</span>
+                </p>
+                <p class="mb-0">
+                    <span class="fa-solid fa-envelope"></span>
+                    <span> {{ 'contact.office.email' | translate }}</span>
+                </p>
             </div>
-            <div class="flex-fill text-lg-center d-none d-lg-flex px-2  justify-content-lg-center">
-                <div class="align-self-center m-0 p-0 d-flex">
-                    <div class="align-self-center">
-                        <p class="mb-2">
-                            <span class="fa-solid fa-copyright mx-1"></span> 2025 Chamber of Aditi Dalakoti.
-                        </p>
-                        <p class="mb-2">
-                            All rights reserved.
-                        </p>
-                        <p>
-                            Disclaimer | Site Map
-                        </p>
+            <div class="col-lg-4 text-center">
+                <p class="mb-2">
+                    <span class="fa-solid fa-copyright mx-1"></span> {{ 'footer.copyright' | translate }}
+                </p>
+                <p class="mb-0">
+                    <a class="footer-link" (click)="openDisclaimer()">{{ 'footer.disclaimer' | translate }}</a>
+                </p>
+            </div>
+            <div class="col-lg-4 text-end">
+                <a class="d-flex nav-link address-link justify-content-end" href="https://maps.app.goo.gl/M4t5vNnNkSK7KEFK6" target="_blank" rel="noopener noreferrer">
+                    <div class="align-self-center me-3 h2 map-icon mb-0">
+                        <span class="fa-solid fa-map-location-dot"></span>
                     </div>
-                </div>
-            </div>
-            <div class="text-end  d-flex px-2  justify-content-end">
-                <div class=" align-self-center ">
-                    <a class="d-flex nav-link address-link" href="https://maps.app.goo.gl/M4t5vNnNkSK7KEFK6" target="_blank" rel="noopener noreferrer">
-                        <div class="align-self-center m-3 d-none d-md-block h2 map-icon">
-                            <span class="fa-solid fa-map-location-dot"></span>
-                        </div>
-                        <div class="align-self-center">
-                            <p class="text-nowrap m-0">
-                                <span class="fa-solid fa-location-dot d-md-none text-danger mx-1"></span> Office 1, Dalakoti Niwas
-                            </p>
-                            <p class="text-nowrap m-0">
-                                Pilikothi, Kaladhungi Road
-                            </p>
-                            <p class="text-nowrap m-0">
-                                Haldwani, Uttarakhand
-                            </p>
-                            <p class="text-nowrap m-0">
-                                India - 263139
-                            </p>
-                        </div>
-                    </a>
-                </div>
+                    <div>
+                        <p class="text-nowrap m-0">{{ 'contact.office.address.line1' | translate }}</p>
+                        <p class="text-nowrap m-0">{{ 'contact.office.address.line2' | translate }}</p>
+                        <p class="text-nowrap m-0">{{ 'contact.office.address.line3' | translate }}</p>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="d-lg-none text-center py-1">
-            <p >
-                <span class="fa-solid fa-copyright mx-1"></span> 2024 Chamber of Aditi Dalakoti. All rights reserved.
+            <p class="mb-2">
+                <span class="fa-solid fa-phone"></span>
+                <span> {{ 'contact.office.phone' | translate }}</span>
             </p>
-            <p >
-                Disclaimer | Site Map
+            <p class="mb-2">
+                <span class="fa-solid fa-envelope"></span>
+                <span> {{ 'contact.office.email' | translate }}</span>
+            </p>
+            <hr class="footer-divider">
+            <p class="mb-2">
+                <span class="fa-solid fa-copyright mx-1"></span> {{ 'footer.copyright' | translate }}
+            </p>
+            <p class="mb-0">
+                <a class="footer-link" (click)="openDisclaimer()">{{ 'footer.disclaimer' | translate }}</a>
             </p>
         </div>
     </div>

@@ -13,14 +13,9 @@
         <div class="text-center my-2">
             <mat-checkbox [(ngModel)]="accepted" color="accent"><strong>I Accept</strong></mat-checkbox>
         </div>
-        <div class="d-flex justify-content-evenly">
-            <div class="">
-                <button mat-raised-button color="primary" [disabled]="!accepted" (click)="onAccept()">Proceed to
-                    Website</button>
-            </div>
-            <div class="">
-                <button mat-raised-button color="warn" (click)="onDecline()">Decline</button>
-            </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-evenly gap-2 mt-2">
+            <button mat-raised-button class="btn-accept" [disabled]="!accepted" (click)="onAccept()">Proceed to Website</button>
+            <button mat-raised-button class="btn-decline" (click)="onDecline()">Decline</button>
         </div>
     </div>
 </div>

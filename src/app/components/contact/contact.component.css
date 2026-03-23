@@ -8,7 +8,7 @@
   font-weight: 600;
 }
 .submit-btn:disabled {
-  background-color: #dcc88a !important;
+  background-color: var(--accent-disabled) !important;
   color: #999 !important;
 }
 .map-container { border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }

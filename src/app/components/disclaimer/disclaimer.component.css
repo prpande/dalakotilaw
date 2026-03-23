@@ -17,11 +17,11 @@
     font-weight: 600;
 }
 .btn-accept:disabled {
-    background-color: #dcc88a !important;
+    background-color: var(--accent-disabled) !important;
     color: #999 !important;
 }
 .btn-decline {
     background-color: transparent !important;
-    color: #c62828 !important;
-    border: 1px solid #c62828 !important;
+    color: var(--danger-color) !important;
+    border: 1px solid var(--danger-color) !important;
 }

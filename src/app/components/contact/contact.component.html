@@ -7,11 +7,11 @@
       <div class="col-12 col-md-7">
         <div *ngIf="formState === 'success'" class="alert alert-success">
           {{ 'contact.form.success' | translate }}
-          <button class="btn btn-sm btn-outline-success ms-3" (click)="resetForm()">Send Another</button>
+          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">Send Another</button>
         </div>
         <div *ngIf="formState === 'error'" class="alert alert-danger">
           {{ 'contact.form.error' | translate }}
-          <button class="btn btn-sm btn-outline-danger ms-3" (click)="resetForm()">Try Again</button>
+          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">Try Again</button>
         </div>
         <form *ngIf="formState === 'idle' || formState === 'submitting'" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
           <mat-form-field appearance="outline" class="w-100 mb-2">
@@ -34,7 +34,7 @@
             <mat-label>{{ 'contact.form.message' | translate }}</mat-label>
             <textarea matInput formControlName="message" rows="5"></textarea>
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid || formState === 'submitting'" class="submit-btn">
+          <button mat-raised-button type="submit" [disabled]="contactForm.invalid || formState === 'submitting'" class="submit-btn">
             {{ formState === 'submitting' ? ('contact.form.sending' | translate) : ('contact.form.submit' | translate) }}
           </button>
         </form>

@@ -76,6 +76,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .accent-border-top { border-top: 3px solid var(--accent-color); }
 .accent-border-left { border-left: 4px solid var(--accent-color); }
 
+/* Gold buttons */
+.btn-outline-accent {
+  color: var(--primary-color);
+  border: 2px solid var(--accent-color);
+  background: transparent;
+}
+.btn-outline-accent:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-color: var(--accent-color);
+}
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.btn-accent:hover {
+  background-color: #b8963f;
+  color: var(--primary-color);
+}
+
 /* Card hover effect */
 .practice-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;

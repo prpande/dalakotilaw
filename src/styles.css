@@ -36,6 +36,24 @@ body {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+/* Override Angular Material accent color globally */
+.mat-accent .mat-checkbox-background,
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,
+.mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background,
+.mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+}
+.mat-accent .mat-ripple-element,
+.mat-mdc-checkbox.mat-accent .mat-mdc-checkbox-ripple .mat-ripple-element {
+    background-color: var(--accent-color) !important;
+}
+/* Override Material primary button color */
+.mat-mdc-raised-button.mat-primary {
+    background-color: var(--primary-color) !important;
+}
+
 /* Section layout utilities */
 .section {
   padding: 4rem 0;

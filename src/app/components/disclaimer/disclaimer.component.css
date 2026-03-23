@@ -9,7 +9,7 @@
 }
 .dialog-box {
     border: 3px solid whitesmoke;
-    box-shadow: 0 0px 20px 20px #35393d;
+    box-shadow: 0 0px 20px 20px var(--shadow-dark);
 }
 .btn-accept {
     background-color: var(--accent-color) !important;
@@ -18,7 +18,7 @@
 }
 .btn-accept:disabled {
     background-color: var(--accent-disabled) !important;
-    color: #999 !important;
+    color: var(--text-disabled) !important;
 }
 .btn-decline {
     background-color: transparent !important;

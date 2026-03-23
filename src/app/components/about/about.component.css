@@ -1,7 +1,7 @@
 /* Page Banner */
 .about-banner {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-  color: #fff;
+  color: var(--text-white);
   padding: 3rem 0 2.5rem;
   text-align: center;
 }
@@ -34,7 +34,7 @@
 .profile-name {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-heading);
   font-variant: small-caps;
 }
 
@@ -72,14 +72,14 @@
 .bio-card-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-heading);
   margin-bottom: 0.75rem;
 }
 
 .bio-text {
   font-size: 1rem;
   line-height: 1.8;
-  color: #555;
+  color: var(--text-muted);
   margin-bottom: 0;
 }
 
@@ -87,7 +87,7 @@
 .bar-card {
   border: none;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--text-white);
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
@@ -98,7 +98,7 @@
 }
 
 .bar-card .qual-icon {
-  color: #fff;
+  color: var(--text-white);
   font-size: 1.5rem;
   min-width: 2rem;
 }
@@ -125,7 +125,7 @@
 .qual-text {
   font-size: 1rem;
   font-weight: 500;
-  color: #444;
+  color: var(--text-body);
   line-height: 1.6;
   margin-bottom: 0;
 }

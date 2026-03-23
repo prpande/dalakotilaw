@@ -9,4 +9,4 @@
 ::ng-deep .faq-category .mat-expansion-panel-header-title {
   line-height: 1.6;
 }
-.faq-answer { line-height: 2.1; color: #555; }
+.faq-answer { line-height: 2.1; color: var(--text-muted); }

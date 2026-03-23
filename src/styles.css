@@ -16,6 +16,12 @@
     --bg-light: #f5f5f5;
     --bg-warm: #f8f0d8;
     --text-dark: #1a1a1a;
+    --text-body: #444;
+    --text-muted: #555;
+    --text-heading: #333;
+    --text-disabled: #999;
+    --text-white: #fff;
+    --shadow-dark: #35393d;
 }
 
 body {
@@ -25,7 +31,7 @@ body {
 
 .base-color {
     background-color: var(--primary-color);
-    color: #f5f5f5 !important;
+    color: var(--bg-light) !important;
 }
 
 .test {
@@ -76,7 +82,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .section-primary {
   background-color: var(--primary-color);
-  color: #f5f5f5;
+  color: var(--bg-light);
 }
 
 .page-header {
@@ -92,7 +98,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .page-header p {
   font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: #555;
+  color: var(--text-muted);
   max-width: 700px;
   margin: 0 auto;
   line-height: 2;
@@ -119,7 +125,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   font-weight: 600;
 }
 .btn-accent:hover {
-  background-color: #b8963f;
+  background-color: var(--accent-hover);
   color: var(--primary-color);
 }
 

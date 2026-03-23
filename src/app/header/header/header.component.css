@@ -43,7 +43,7 @@ img{
 .lang-slider {
     width: 18px;
     height: 18px;
-    background: #fff;
+    background: var(--text-white);
     border-radius: 50%;
     position: absolute;
     top: 2px;

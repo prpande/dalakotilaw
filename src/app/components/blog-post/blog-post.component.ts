@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription, combineLatest } from 'rxjs';
 import { BlogService } from '../../services/blog.service';
 import { TranslationService } from '../../services/translation.service';
+import { SeoService } from '../../services/seo.service';
 import { BlogArticle } from '../../models/blog.models';
 
 @Component({
@@ -21,7 +22,8 @@ export class BlogPostComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     public blogService: BlogService,
-    private translationService: TranslationService
+    private translationService: TranslationService,
+    private seoService: SeoService
   ) {}
 
   ngOnInit(): void {
@@ -59,6 +61,12 @@ export class BlogPostComponent implements OnInit, OnDestroy {
         this.article = article;
         this.isFallback = article.lang !== lang;
         this.loading = false;
+        const postLang = article.lang;
+        const postData = (postLang === 'hi' && article.post.hi) ? article.post.hi : article.post.en;
+        const title = postData.title;
+        const summary = postData.summary;
+        const imageUrl = article.post.image ? this.blogService.getImageUrl(article.post.image) : undefined;
+        this.seoService.updateForBlogPost(title, summary, imageUrl);
       },
       error: () => {
         this.error = true;

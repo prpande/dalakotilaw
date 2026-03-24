@@ -41,6 +41,10 @@
   background-color: var(--accent-hover);
   color: var(--primary-color);
 }
+.section h2.practices-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;

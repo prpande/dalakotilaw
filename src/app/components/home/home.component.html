@@ -11,7 +11,7 @@
 <!-- Practice Area Cards -->
 <section class="section">
   <div class="container">
-    <h2 class="text-center mb-4">{{ 'home.practices.title' | translate }}</h2>
+    <h2 class="text-center mb-4 practices-title">{{ 'home.practices.title' | translate }}</h2>
     <div class="row g-4">
       <div *ngFor="let area of practiceAreas" class="col-12 col-md-6 col-lg-4">
         <div class="card practice-card p-4" (click)="navigateToPractice(area.id)">

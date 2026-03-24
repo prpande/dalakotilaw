@@ -6,10 +6,10 @@
 :root {
     --primary-color: #1a2744;
     --primary-dark: #0f1a2e;
-    --accent-color: #d4a528;
-    --accent-hover: #bf8f1e;
-    --accent-light: #e6b830;
-    --accent-disabled: #dcc88a;
+    --accent-color: #fcc900;
+    --accent-hover: #e0b300;
+    --accent-light: #fdd633;
+    --accent-disabled: #fde680;
     --danger-color: #c62828;
     --linkedin-color: #0a66c2;
     --linkedin-hover: #004182;

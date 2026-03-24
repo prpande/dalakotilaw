@@ -27,3 +27,13 @@ read before signing, keep copies of all documents, do not ignore notices, do not
 For lenders, careful documentation and consistent follow-up remain essential. For borrowers and guarantors, early clarity is the best protection. Most recovery problems become harder, not easier, when they are left unattended.
 
 *This article is for general information and does not constitute legal advice.*
+
+[1]: https://www.indiacode.nic.in/bitstream/123456789/2006/1/A2002-54.pdf "The Securitisation and Reconstruction of Financial Assets ..."
+[2]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00042_188204_1523272233671&orderno=59&sectionId=44251&sectionno=58 "Section 58"
+[3]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00035_187209_1523268996428&orderno=129&sectionId=38684&sectionno=128 "Section 128"
+[4]: https://www.rbi.org.in/commonman/english/scripts/Notification.aspx?Id=889 "Non-performing Assets (NPA)"
+[5]: https://indiacode.nic.in/handle/123456789/2191 "Code of Civil Procedure, 1908"
+[6]: https://www.cersai.org.in/CERSAI/tnc.prg "Terms & Conditions"
+[7]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_2_33_00042_00042_1523271998701&orderno=143&sectionId=45718&sectionno=138 "Section 138"
+[8]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_2_11_00037_200254_1517807324604&orderno=16&sectionId=20655&sectionno=13 "Section 13 (2)"
+[9]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00042_188204_1523272233671&orderno=62 "India Code: Section Details"

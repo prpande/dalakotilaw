@@ -27,3 +27,13 @@ Indian Contract Act की Section 128 के अनुसार, जब तक 
 ऋणदाताओं के लिए, सावधानीपूर्वक documentation और सुसंगत follow-up अब भी अत्यंत आवश्यक हैं। उधारकर्ताओं और गारंटरों के लिए, समय रहते स्पष्टता सबसे अच्छा संरक्षण है। अधिकांश रिकवरी समस्याएँ अनदेखी छोड़ देने पर आसान नहीं, बल्कि अधिक कठिन हो जाती हैं।
 
 *यह लेख केवल सामान्य जानकारी के लिए है और इसे विधिक परामर्श नहीं माना जाना चाहिए।*
+
+[1]: https://www.indiacode.nic.in/bitstream/123456789/2006/1/A2002-54.pdf "The Securitisation and Reconstruction of Financial Assets ..."
+[2]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00042_188204_1523272233671&orderno=59&sectionId=44251&sectionno=58 "Section 58"
+[3]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00035_187209_1523268996428&orderno=129&sectionId=38684&sectionno=128 "Section 128"
+[4]: https://www.rbi.org.in/commonman/english/scripts/Notification.aspx?Id=889 "Non-performing Assets (NPA)"
+[5]: https://indiacode.nic.in/handle/123456789/2191 "Code of Civil Procedure, 1908"
+[6]: https://www.cersai.org.in/CERSAI/tnc.prg "Terms & Conditions"
+[7]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_2_33_00042_00042_1523271998701&orderno=143&sectionId=45718&sectionno=138 "Section 138"
+[8]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_2_11_00037_200254_1517807324604&orderno=16&sectionId=20655&sectionno=13 "Section 13 (2)"
+[9]: https://www.indiacode.nic.in/show-data?actid=AC_CEN_3_20_00042_188204_1523272233671&orderno=62 "India Code: Section Details"

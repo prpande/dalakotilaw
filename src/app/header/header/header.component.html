@@ -11,7 +11,15 @@
                         </div>
                     </div>
                 </a>
-                <button #navbarToggler class="navbar-toggler base-color border-white my-2 ms-auto" type="button" data-bs-toggle="collapse"
+                <!-- Language toggle visible on mobile, left of burger -->
+                <div class="d-flex d-lg-none align-items-center ms-auto me-2 lang-toggle-mobile">
+                    <span class="lang-label" [class.active]="translationService.currentLanguage === 'en'">EN</span>
+                    <div class="lang-switch" (click)="toggleLanguage()" [class.hindi]="translationService.currentLanguage === 'hi'">
+                        <div class="lang-slider"></div>
+                    </div>
+                    <span class="lang-label" [class.active]="translationService.currentLanguage === 'hi'">हिं</span>
+                </div>
+                <button #navbarToggler class="navbar-toggler base-color border-white my-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="fa-solid fa-bars base-color"></span>
@@ -24,7 +32,8 @@
                         <li class="nav-item"><a routerLink="/faqs" class="nav-link base-color">{{ 'nav.faqs' | translate }}</a></li>
                         <li class="nav-item"><a routerLink="/blog" class="nav-link base-color">{{ 'nav.blog' | translate }}</a></li>
                         <li class="nav-item"><a routerLink="/contact" class="nav-link base-color">{{ 'nav.contact' | translate }}</a></li>
-                        <li class="nav-item d-flex align-items-center ms-lg-4">
+                        <!-- Language toggle visible on desktop only -->
+                        <li class="nav-item d-none d-lg-flex align-items-center ms-lg-4">
                             <span class="lang-label" [class.active]="translationService.currentLanguage === 'en'">EN</span>
                             <div class="lang-switch" (click)="toggleLanguage()" [class.hindi]="translationService.currentLanguage === 'hi'">
                                 <div class="lang-slider"></div>

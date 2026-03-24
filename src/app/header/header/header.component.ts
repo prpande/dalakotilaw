@@ -51,11 +51,10 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll')
   onScroll(): void {
-    if (this.navbarCollapse?.nativeElement?.classList.contains('show')) {
-      const collapse = bootstrap.Collapse.getInstance(this.navbarCollapse.nativeElement);
-      if (collapse) {
-        collapse.hide();
-      }
+    const el = this.navbarCollapse?.nativeElement;
+    if (el?.classList.contains('show') && !el.classList.contains('collapsing')) {
+      const collapse = bootstrap.Collapse.getOrCreateInstance(el);
+      collapse.hide();
     }
   }
 }

@@ -9,14 +9,21 @@
 ::ng-deep .mat-expansion-panel-header-title {
   font-size: 1.25rem;
   line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 ::ng-deep .mat-expansion-panel-header-description {
   line-height: 1.6;
   padding-top: 0.15rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 ::ng-deep .mat-expansion-panel-body {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+  padding-top: 0.5rem !important;
 }
 .practice-summary { font-size: 1rem; color: var(--text-body); line-height: 2.1; }
 .detail-title { font-size: 1.05rem; font-weight: 600; color: var(--primary-color); margin-bottom: 0.4rem; }

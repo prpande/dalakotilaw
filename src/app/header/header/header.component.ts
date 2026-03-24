@@ -5,8 +5,6 @@ import { DisclaimerCheckService } from 'src/app/services/disclaimer-check.servic
 import { TranslationService } from 'src/app/services/translation.service';
 import { LanguageSelectComponent } from 'src/app/components/language-select/language-select.component';
 
-declare var bootstrap: any;
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,6 +12,7 @@ declare var bootstrap: any;
 })
 export class HeaderComponent implements OnInit {
   @ViewChild('navbarCollapse', { static: false }) navbarCollapse!: ElementRef;
+  @ViewChild('navbarToggler', { static: false }) navbarToggler!: ElementRef;
   headerClass = "base-color";
 
   constructor(
@@ -53,8 +52,7 @@ export class HeaderComponent implements OnInit {
   onScroll(): void {
     const el = this.navbarCollapse?.nativeElement;
     if (el?.classList.contains('show') && !el.classList.contains('collapsing')) {
-      const collapse = bootstrap.Collapse.getOrCreateInstance(el);
-      collapse.hide();
+      this.navbarToggler?.nativeElement?.click();
     }
   }
 }

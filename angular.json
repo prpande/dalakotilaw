@@ -24,6 +24,7 @@
               "src/favicon.ico",
               "src/assets",
               { "glob": "CNAME", "input": "src/assets", "output": "/" },
+              { "glob": "robots.txt", "input": "src/assets", "output": "/" },
               { "glob": ".nojekyll", "input": "src", "output": "/" },
               { "glob": "**/*", "input": "docs/blog", "output": "/blog" }
             ],

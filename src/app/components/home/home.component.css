@@ -1,5 +1,5 @@
 .hero-section {
-  background: url('/assets/images/hero-bg.png') center/cover no-repeat;
+  background: url('../../../assets/images/hero-bg.webp') center/cover no-repeat;
   background-color: var(--primary-color);
   min-height: 70vh;
   display: flex;

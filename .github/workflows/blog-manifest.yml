@@ -5,6 +5,9 @@ on:
     branches: [master]
     paths: ['docs/blog/posts/**']
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   generate-manifest:
     runs-on: ubuntu-latest

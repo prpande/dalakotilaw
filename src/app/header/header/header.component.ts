@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DisclaimerService } from 'src/app/components/disclaimer/disclaimer.service';
 import { DisclaimerCheckService } from 'src/app/services/disclaimer-check.service';
 import { TranslationService } from 'src/app/services/translation.service';
 import { LanguageSelectComponent } from 'src/app/components/language-select/language-select.component';
+
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-header',
@@ -11,6 +13,7 @@ import { LanguageSelectComponent } from 'src/app/components/language-select/lang
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navbarCollapse', { static: false }) navbarCollapse!: ElementRef;
   headerClass = "base-color";
 
   constructor(
@@ -28,6 +31,8 @@ export class HeaderComponent implements OnInit {
           this.openLanguageDialog();
         }
       });
+    } else {
+      this.headerClass += " sticky-top";
     }
   }
 
@@ -42,5 +47,15 @@ export class HeaderComponent implements OnInit {
   toggleLanguage(): void {
     const newLang = this.translationService.currentLanguage === 'en' ? 'hi' : 'en';
     this.translationService.setLanguage(newLang);
+  }
+
+  @HostListener('window:scroll')
+  onScroll(): void {
+    if (this.navbarCollapse?.nativeElement?.classList.contains('show')) {
+      const collapse = bootstrap.Collapse.getInstance(this.navbarCollapse.nativeElement);
+      if (collapse) {
+        collapse.hide();
+      }
+    }
   }
 }

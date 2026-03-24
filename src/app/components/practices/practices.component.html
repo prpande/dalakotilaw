@@ -1,10 +1,11 @@
 <div class="page-header">
   <div class="container">
     <h1>{{ 'practices.title' | translate }}</h1>
-    <p>{{ 'practices.subtitle' | translate }}</p>
+    <div class="separator mb-4"><div class="sep-line"></div><div class="sep-dot"></div><div class="sep-diamond"></div><div class="sep-dot"></div><div class="sep-line"></div></div>
+    <p class="mb-0">{{ 'practices.subtitle' | translate }}</p>
   </div>
 </div>
-<section class="section">
+<section class="section pt-3">
   <div class="container">
     <mat-accordion multi>
       <mat-expansion-panel *ngFor="let area of practiceAreas" [id]="area.id" class="mb-3">

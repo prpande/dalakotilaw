@@ -1,7 +1,10 @@
 <div class="page-header">
-  <div class="container"><h1>{{ 'faqs.title' | translate }}</h1></div>
+  <div class="container">
+    <h1>{{ 'faqs.title' | translate }}</h1>
+    <div class="separator"><div class="sep-line"></div><div class="sep-dot"></div><div class="sep-diamond"></div><div class="sep-dot"></div><div class="sep-line"></div></div>
+  </div>
 </div>
-<section class="section">
+<section class="section pt-3">
   <div class="container">
     <div *ngFor="let category of categories" class="faq-category mb-5">
       <h3 class="category-title mb-3">{{ category.titleKey | translate }}</h3>

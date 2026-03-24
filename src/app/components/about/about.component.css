@@ -49,17 +49,22 @@
   border-top: 3px solid var(--accent-color);
 }
 
+.bio-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
 .bio-card-icon {
   font-size: 1.5rem;
   color: var(--primary-color);
-  display: block;
 }
 
 .bio-card-title {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-heading);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
 }
 
 .bio-text {
@@ -76,6 +81,8 @@
   color: var(--text-white);
   border-radius: 8px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  display: inline-flex;
+  text-align: center;
 }
 
 .bar-card p {
@@ -97,23 +104,31 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.qual-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+
+.qual-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .qual-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--primary-color);
-  display: block;
 }
 
-.qual-text {
+.qual-degree {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-body);
+}
+
+.qual-institution {
+  font-size: 0.9rem;
+  color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 0;
+  padding-left: 2.1rem;
 }
 
 /* Responsive */

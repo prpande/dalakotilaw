@@ -2,6 +2,7 @@
 <section class="hero-section">
   <div class="hero-overlay">
     <div class="container text-center">
+      <h1 class="sr-only">Dalakoti Law — Advocate in Haldwani, Uttarakhand</h1>
       <p class="hero-tagline">{{ 'home.hero.tagline' | translate }}</p>
       <a routerLink="/contact" class="btn btn-lg hero-cta mt-3">{{ 'home.hero.cta' | translate }}</a>
     </div>
@@ -40,7 +41,7 @@
             <img [src]="getPostImageUrl(post)" [alt]="getPostTitle(post)" class="card-img-top blog-card-sm-img">
             <div class="card-body p-3">
               <div class="blog-card-sm-date">{{ post.date }}</div>
-              <h6 class="blog-card-sm-title">{{ getPostTitle(post) }}</h6>
+              <h3 class="blog-card-sm-title">{{ getPostTitle(post) }}</h3>
               <p class="blog-card-sm-summary">{{ getPostSummary(post) }}</p>
             </div>
           </div>

@@ -10,7 +10,7 @@
       <div class="col-12 col-md-7">
         <div *ngIf="formState === 'success'" class="alert alert-success">
           {{ 'contact.form.success' | translate }}
-          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">Send Another</button>
+          <button class="btn btn-sm btn-outline-accent ms-3" (click)="resetForm()">{{ 'contact.form.sendAnother' | translate }}</button>
         </div>
         <div *ngIf="formState === 'error'" class="alert alert-danger">
           {{ 'contact.form.error' | translate }}

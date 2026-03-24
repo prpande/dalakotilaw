@@ -89,6 +89,7 @@
   "contact.form.sending": "भेजा जा रहा है...",
   "contact.form.success": "आपका संदेश सफलतापूर्वक भेज दिया गया है। हम शीघ्र ही आपसे संपर्क करेंगे।",
   "contact.form.error": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।",
+  "contact.form.sendAnother": "एक और संदेश भेजें",
   "contact.office.title": "कार्यालय",
   "contact.office.address.line1": "पिलीकोठी चौराहा, कालाढूंगी रोड",
   "contact.office.address.line2": "हल्द्वानी, उत्तराखंड",

@@ -9,9 +9,9 @@ jobs:
   generate-manifest:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 20
 
@@ -22,7 +22,7 @@ jobs:
         run: node scripts/generate-blog-manifest.js
 
       - name: Commit manifest
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "chore: auto-generate blog manifest [skip ci]"
           file_pattern: docs/blog/index.json

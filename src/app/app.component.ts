@@ -1,6 +1,7 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { DisclaimerService } from './components/disclaimer/disclaimer.service';
 import { TranslationService } from './services/translation.service';
+import { SeoService } from './services/seo.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -19,9 +20,10 @@ export class AppComponent implements OnInit, OnDestroy {
     hi: 'नमस्ते, मैं आपकी विधिक सेवाओं के बारे में जानकारी लेना चाहता/चाहती हूँ।'
   };
 
-  constructor(private translationService: TranslationService) {}
+  constructor(private translationService: TranslationService, private seoService: SeoService) {}
 
   ngOnInit(): void {
+    this.seoService.init();
     this.updateUrl();
     this.langSub = this.translationService.lang$.subscribe(() => this.updateUrl());
   }

@@ -1,0 +1,39 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+    paths-ignore: ['docs/**']
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npx ng build
+
+      - name: Prepare docs folder
+        run: |
+          # Preserve CNAME and .nojekyll
+          cp docs/CNAME /tmp/CNAME 2>/dev/null || echo "dalakotilaw.com" > /tmp/CNAME
+          rm -rf docs/*
+          cp -r dist/dalakotilaw/* docs/
+          cp docs/index.html docs/404.html
+          cp /tmp/CNAME docs/CNAME
+          touch docs/.nojekyll
+
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "build: auto-deploy production build [skip ci]"
+          file_pattern: docs/

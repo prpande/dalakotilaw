@@ -43,8 +43,9 @@ export class BlogService {
     );
   }
 
-  getImageUrl(filename: string): string {
-    return `${this.imagesPath}/${filename}`;
+  getImageUrl(filename: string, format: 'jpg' | 'webp' = 'jpg'): string {
+    const baseName = filename.replace(/\.(jpg|jpeg|png)$/i, '');
+    return `${this.imagesPath}/${baseName}.${format}`;
   }
 
   private parseMarkdown(raw: string, post: BlogPost, lang: string): BlogArticle {

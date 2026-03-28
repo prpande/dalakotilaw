@@ -1,7 +1,228 @@
 [
   {
+    "slug": "sarfaesi-auction-myths",
+    "date": "2026-03-28",
+    "image": "sarfaesi-auction-myths.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "Auction Sale Under SARFAESI: Common Myths About Valuation, Notice, and Challenge",
+      "summary": "SARFAESI auction disputes are often surrounded by strong emotion and incomplete understanding. The record usually decides the outcome."
+    },
+    "hi": {
+      "title": "SARFAESI के तहत नीलामी बिक्री: मूल्यांकन, नोटिस और चुनौती के बारे में आम मिथक",
+      "summary": "SARFAESI नीलामी विवाद अक्सर अधूरी समझ से घिरे होते हैं — रिकॉर्ड और दस्तावेज़ ही आमतौर पर परिणाम तय करते हैं।"
+    }
+  },
+  {
+    "slug": "termination-vs-discharge",
+    "date": "2026-03-18",
+    "image": "termination-vs-discharge.jpg",
+    "tags": [
+      "disciplinary"
+    ],
+    "en": {
+      "title": "Termination for Misconduct vs Simple Discharge: Why the Difference Matters",
+      "summary": "In employment disputes, the distinction between termination for misconduct and simple discharge affects procedure, stigma, and sustainability."
+    },
+    "hi": {
+      "title": "कदाचार के लिए समाप्ति बनाम साधारण सेवामुक्ति: यह अंतर क्यों मायने रखता है",
+      "summary": "रोजगार विवादों में कदाचार के लिए समाप्ति और साधारण सेवामुक्ति का अंतर प्रक्रिया, कलंक और कार्रवाई की स्थिरता को प्रभावित करता है।"
+    }
+  },
+  {
+    "slug": "civil-dispute-given-criminal-colour",
+    "date": "2026-03-07",
+    "image": "civil-dispute-given-criminal-colour.jpg",
+    "tags": [
+      "civil",
+      "criminal"
+    ],
+    "en": {
+      "title": "When Civil Disputes Are Given a Criminal Colour: What Courts Usually Look At",
+      "summary": "One of the recurring features of modern litigation is the attempt to turn a civil dispute into a criminal case. Courts look beyond labels to ingredients."
+    },
+    "hi": {
+      "title": "जब दीवानी विवादों को आपराधिक रंग दिया जाता है: अदालतें आमतौर पर क्या देखती हैं",
+      "summary": "आधुनिक मुकदमेबाजी में दीवानी विवाद को आपराधिक मामले में बदलने का प्रयास आम है, लेकिन अदालतें लेबलों से परे तथ्यों के तत्वों को देखती हैं।"
+    }
+  },
+  {
+    "slug": "guarantor-and-mortgaged-property",
+    "date": "2026-02-26",
+    "image": "guarantor-and-mortgaged-property.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "Can a Bank Proceed Against the Guarantor and the Mortgaged Property at the Same Time?",
+      "summary": "Guarantors often assume they are exposed only after every other step has failed. In practice, that assumption is not safe."
+    },
+    "hi": {
+      "title": "क्या बैंक एक ही समय में गारंटर और गिरवी रखी गई संपत्ति के खिलाफ कार्रवाई कर सकता है?",
+      "summary": "गारंटर अक्सर यह मान लेते हैं कि वे जोखिम में तभी आते हैं जब अन्य सभी कदम विफल हो जाते हैं — व्यवहार में यह धारणा सुरक्षित नहीं है।"
+    }
+  },
+  {
+    "slug": "title-search-report-checklist",
+    "date": "2026-02-13",
+    "image": "title-search-report-checklist.jpg",
+    "tags": [
+      "property",
+      "banking"
+    ],
+    "en": {
+      "title": "What a Proper Title Search Report Should Actually Cover Before Buying Property",
+      "summary": "A proper title search is a structured legal examination of how title is claimed, how it has moved, and whether any visible risk emerges."
+    },
+    "hi": {
+      "title": "संपत्ति खरीदने से पहले एक उचित टाइटल सर्च रिपोर्ट में वास्तव में क्या शामिल होना चाहिए",
+      "summary": "एक उचित टाइटल सर्च एक संरचित कानूनी जांच है जो स्वामित्व के दावे, उसके हस्तांतरण और किसी भी स्पष्ट जोखिम की जांच करती है।"
+    }
+  },
+  {
+    "slug": "cheque-bounce-civil-and-criminal",
+    "date": "2026-01-31",
+    "image": "cheque-bounce-civil-and-criminal.jpg",
+    "tags": [
+      "civil",
+      "criminal",
+      "recovery"
+    ],
+    "en": {
+      "title": "Cheque Bounce Is Not Always Just a Criminal Case: When Recovery and Complaint Can Run Together",
+      "summary": "Cheque dishonour disputes frequently sit at the intersection of civil recovery and criminal complaint. Understanding both paths matters."
+    },
+    "hi": {
+      "title": "चेक बाउंस हमेशा केवल एक आपराधिक मामला नहीं होता: जब वसूली और शिकायत एक साथ चल सकते हैं",
+      "summary": "चेक के अनादरण से जुड़े विवाद अक्सर दीवानी वसूली और आपराधिक शिकायत दोनों के चौराहे पर होते हैं — दोनों मार्गों को समझना आवश्यक है।"
+    }
+  },
+  {
+    "slug": "before-signing-as-guarantor",
+    "date": "2026-01-14",
+    "image": "before-signing-as-guarantor.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "Before You Sign as Guarantor: Risks Most Borrowers and Families Overlook",
+      "summary": "A guarantee is not a ceremonial endorsement. It is a legal undertaking with serious financial consequences."
+    },
+    "hi": {
+      "title": "गारंटर के रूप में हस्ताक्षर करने से पहले: वे जोखिम जिन्हें अधिकांश कर्जदार और परिवार नज़रअंदाज़ कर देते हैं",
+      "summary": "गारंटी कोई रस्मी समर्थन नहीं है — यह गंभीर वित्तीय परिणामों वाला एक कानूनी वचन है जिसे समझकर और दस्तावेजों की जांच के बाद ही हस्ताक्षर करना चाहिए।"
+    }
+  },
+  {
+    "slug": "recovery-action-guide",
+    "date": "2025-12-28",
+    "image": "recovery-action-guide.jpg",
+    "tags": [
+      "banking",
+      "recovery",
+      "civil"
+    ],
+    "en": {
+      "title": "Borrowers, Guarantors, and Recovery Action: A Practical Guide",
+      "summary": "A practical guide to understanding rights, duties, and common misunderstandings in banking recovery."
+    },
+    "hi": {
+      "title": "उधारकर्ता, गारंटर, और रिकवरी कार्रवाई: एक व्यावहारिक मार्गदर्शिका",
+      "summary": "बैंकिंग रिकवरी में अधिकारों, दायित्वों और सामान्य गलतफहमियों को समझने की व्यावहारिक मार्गदर्शिका।"
+    }
+  },
+  {
+    "slug": "charge-sheet-response",
+    "date": "2025-12-05",
+    "image": "charge-sheet-response.jpg",
+    "tags": [
+      "banking",
+      "disciplinary"
+    ],
+    "en": {
+      "title": "What to Do After Receiving a Charge Sheet or Show Cause Notice",
+      "summary": "A practical guide for bank officers on how to respond to disciplinary proceedings carefully and effectively."
+    },
+    "hi": {
+      "title": "चार्जशीट या शो कॉज नोटिस मिलने पर क्या करें",
+      "summary": "बैंक अधिकारियों के लिए अनुशासनात्मक कार्यवाही का सावधानी और प्रभावी ढंग से जवाब देने की व्यावहारिक मार्गदर्शिका।"
+    }
+  },
+  {
+    "slug": "sarfaesi-notice-checklist",
+    "date": "2025-11-18",
+    "image": "sarfaesi-notice-checklist.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "SARFAESI Notice Received? What a Borrower Should Check Before Reacting",
+      "summary": "A SARFAESI notice is part of a statutory recovery process. Read it carefully and act early — not casually or defensively."
+    },
+    "hi": {
+      "title": "SARFAESI नोटिस मिला? प्रतिक्रिया देने से पहले एक कर्जदार को क्या जाँचना चाहिए",
+      "summary": "SARFAESI नोटिस एक वैधानिक वसूली प्रक्रिया का हिस्सा है — इसे ध्यान से पढ़ें और जल्दी कार्रवाई करें, लापरवाही या भावनात्मक प्रतिक्रिया से नहीं।"
+    }
+  },
+  {
+    "slug": "departmental-enquiry-mistakes",
+    "date": "2025-10-30",
+    "image": "departmental-enquiry-mistakes.jpg",
+    "tags": [
+      "banking",
+      "disciplinary"
+    ],
+    "en": {
+      "title": "Five Mistakes That Commonly Break a Departmental Enquiry",
+      "summary": "A disciplinary process may be internal in form, but it still has to satisfy basic standards of fairness, clarity, and procedural discipline."
+    },
+    "hi": {
+      "title": "विभागीय जांच को विफल करने वाली पांच सामान्य गलतियां",
+      "summary": "विभागीय जांच स्वरूप में आंतरिक हो सकती है, लेकिन उसे निष्पक्षता, स्पष्टता और प्रक्रियात्मक अनुशासन के बुनियादी मानकों को पूरा करना होता है।"
+    }
+  },
+  {
+    "slug": "documentation-mistakes",
+    "date": "2025-10-08",
+    "image": "documentation-mistakes.jpg",
+    "tags": [
+      "banking",
+      "recovery"
+    ],
+    "en": {
+      "title": "Common Documentation Mistakes in Banking and Recovery Matters",
+      "summary": "In banking and recovery work, documents do not merely support a case — they often become the case."
+    },
+    "hi": {
+      "title": "बैंकिंग और रिकवरी मामलों में आम दस्तावेजी गलतियाँ",
+      "summary": "बैंकिंग और रिकवरी कार्य में दस्तावेज केवल किसी मामले का समर्थन नहीं करते — बहुत बार वही स्वयं मामला बन जाते हैं।"
+    }
+  },
+  {
+    "slug": "uttarakhand-hill-property-checks",
+    "date": "2025-09-22",
+    "image": "uttarakhand-hill-property-checks.jpg",
+    "tags": [
+      "property"
+    ],
+    "en": {
+      "title": "Buying Hill Property in Uttarakhand: Title, Access, Revenue Records, and Ground Realities",
+      "summary": "Hill property carries risks often underestimated by buyers who rely only on photographs or local assurances. A proper title review matters."
+    },
+    "hi": {
+      "title": "उत्तराखंड में पहाड़ी संपत्ति खरीदना: स्वामित्व, पहुँच, राजस्व रिकॉर्ड और ज़मीनी हकीकत",
+      "summary": "पहाड़ी संपत्ति बहुत आकर्षक हो सकती है, लेकिन इसमें ऐसे जोखिम होते हैं जिन्हें अक्सर खरीदार कम आंकते हैं — एक उचित स्वामित्व समीक्षा आवश्यक है।"
+    }
+  },
+  {
     "slug": "civil-vs-criminal",
-    "date": "2026-03-20",
+    "date": "2025-09-03",
     "image": "civil-vs-criminal.jpg",
     "tags": [
       "civil",
@@ -18,7 +239,7 @@
   },
   {
     "slug": "title-search",
-    "date": "2026-03-18",
+    "date": "2025-08-12",
     "image": "title-search.jpg",
     "tags": [
       "property",
@@ -31,58 +252,6 @@
     "hi": {
       "title": "बंधक, खरीद, या ऋण स्वीकृति से पहले टाइटल सर्च क्यों महत्वपूर्ण है",
       "summary": "किसी भी संपत्ति लेन-देन या बंधक निर्माण में टाइटल स्क्रूटिनी सबसे महत्वपूर्ण जोखिम-नियंत्रण चरणों में से एक है।"
-    }
-  },
-  {
-    "slug": "charge-sheet-response",
-    "date": "2026-03-15",
-    "image": "charge-sheet-response.jpg",
-    "tags": [
-      "banking",
-      "disciplinary"
-    ],
-    "en": {
-      "title": "What to Do After Receiving a Charge Sheet or Show Cause Notice",
-      "summary": "A practical guide for bank officers on how to respond to disciplinary proceedings carefully and effectively."
-    },
-    "hi": {
-      "title": "चार्जशीट या शो कॉज नोटिस मिलने पर क्या करें",
-      "summary": "बैंक अधिकारियों के लिए अनुशासनात्मक कार्यवाही का सावधानी और प्रभावी ढंग से जवाब देने की व्यावहारिक मार्गदर्शिका।"
-    }
-  },
-  {
-    "slug": "documentation-mistakes",
-    "date": "2026-03-12",
-    "image": "documentation-mistakes.jpg",
-    "tags": [
-      "banking",
-      "recovery"
-    ],
-    "en": {
-      "title": "Common Documentation Mistakes in Banking and Recovery Matters",
-      "summary": "In banking and recovery work, documents do not merely support a case — they often become the case."
-    },
-    "hi": {
-      "title": "बैंकिंग और रिकवरी मामलों में आम दस्तावेजी गलतियाँ",
-      "summary": "बैंकिंग और रिकवरी कार्य में दस्तावेज केवल किसी मामले का समर्थन नहीं करते — बहुत बार वही स्वयं मामला बन जाते हैं।"
-    }
-  },
-  {
-    "slug": "recovery-action-guide",
-    "date": "2026-03-10",
-    "image": "recovery-action-guide.jpg",
-    "tags": [
-      "banking",
-      "recovery",
-      "civil"
-    ],
-    "en": {
-      "title": "Borrowers, Guarantors, and Recovery Action: A Practical Guide",
-      "summary": "A practical guide to understanding rights, duties, and common misunderstandings in banking recovery."
-    },
-    "hi": {
-      "title": "उधारकर्ता, गारंटर, और रिकवरी कार्रवाई: एक व्यावहारिक मार्गदर्शिका",
-      "summary": "बैंकिंग रिकवरी में अधिकारों, दायित्वों और सामान्य गलतफहमियों को समझने की व्यावहारिक मार्गदर्शिका।"
     }
   }
 ]

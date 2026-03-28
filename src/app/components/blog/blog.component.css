@@ -68,3 +68,233 @@
     height: 160px;
   }
 }
+
+/* ── Filter & Sort Bar ── */
+
+.blog-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.filter-dropdown-wrapper {
+  position: relative;
+}
+
+.filter-dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: var(--text-dark);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-dropdown-btn:hover {
+  border-color: var(--primary-color);
+}
+
+.filter-dropdown-icon {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.filter-badge {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 10px;
+  min-width: 1.2rem;
+  text-align: center;
+}
+
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.filter-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+  margin: 0;
+}
+
+.filter-dropdown-item:hover {
+  background: var(--bg-warm, #f8f7f4);
+}
+
+.filter-dropdown-item input[type="checkbox"] {
+  accent-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.filter-dropdown-label {
+  text-transform: capitalize;
+}
+
+.filter-dropdown-footer {
+  border-top: 1px solid #eee;
+  margin-top: 0.25rem;
+  padding: 0.4rem 1rem 0.2rem;
+}
+
+.filter-clear-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter-clear-btn:hover {
+  color: var(--primary-color);
+}
+
+/* ── Filter Chips ── */
+
+.filter-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.filter-chip-remove {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.1rem;
+}
+
+.filter-chip-remove:hover {
+  color: white;
+}
+
+/* ── Sort Control ── */
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.sort-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.sort-select {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  background: white;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.sort-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* ── Empty State ── */
+
+.blog-empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.blog-empty-state p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.filter-clear-link {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.filter-clear-link:hover {
+  color: var(--primary-color);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .blog-filter-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .filter-controls {
+    width: 100%;
+  }
+
+  .sort-control {
+    width: 100%;
+  }
+}

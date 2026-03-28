@@ -7,8 +7,55 @@
 
 <section class="section" *ngIf="posts.length > 0">
   <div class="container">
-    <div class="row g-4">
-      <div *ngFor="let post of posts" class="col-12 col-md-6 col-lg-4">
+
+    <!-- Filter & Sort Bar -->
+    <div class="blog-filter-bar">
+      <div class="filter-controls">
+        <!-- Filter Dropdown -->
+        <div class="filter-dropdown-wrapper">
+          <button class="filter-dropdown-btn" (click)="toggleDropdown()">
+            <span class="filter-dropdown-icon">&#9662;</span>
+            Filter by topic
+            <span class="filter-badge" *ngIf="selectedTags.size > 0">{{ selectedTags.size }}</span>
+          </button>
+
+          <!-- Overlay to catch click-outside -->
+          <div class="filter-overlay" *ngIf="dropdownOpen" (click)="closeDropdown()"></div>
+
+          <!-- Dropdown panel -->
+          <div class="filter-dropdown" *ngIf="dropdownOpen">
+            <label *ngFor="let tag of allTags" class="filter-dropdown-item" (click)="toggleTag(tag); $event.stopPropagation()">
+              <input type="checkbox" [checked]="selectedTags.has(tag)">
+              <span class="filter-dropdown-label">{{ tag }}</span>
+            </label>
+            <div class="filter-dropdown-footer" *ngIf="selectedTags.size > 0">
+              <button class="filter-clear-btn" (click)="clearFilters(); closeDropdown()">Clear all</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Active filter chips -->
+        <div class="filter-chips" *ngIf="selectedTagsList.length > 0">
+          <span *ngFor="let tag of selectedTagsList" class="filter-chip">
+            {{ tag }}
+            <button class="filter-chip-remove" (click)="toggleTag(tag)">×</button>
+          </span>
+        </div>
+      </div>
+
+      <!-- Sort Dropdown -->
+      <div class="sort-control">
+        <label class="sort-label">Sort:</label>
+        <select class="sort-select" [ngModel]="sortOrder" (ngModelChange)="setSortOrder($event)">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Card Grid -->
+    <div class="row g-4" *ngIf="filteredPosts.length > 0">
+      <div *ngFor="let post of filteredPosts" class="col-12 col-md-6 col-lg-4">
         <a [routerLink]="['/blog', post.slug]" class="blog-card-link">
           <div class="card blog-card">
             <picture>
@@ -28,6 +75,13 @@
         </a>
       </div>
     </div>
+
+    <!-- Empty state -->
+    <div class="blog-empty-state" *ngIf="filteredPosts.length === 0">
+      <p class="text-muted">No posts found for the selected topics.</p>
+      <button class="filter-clear-link" (click)="clearFilters()">Clear filters</button>
+    </div>
+
   </div>
 </section>
 

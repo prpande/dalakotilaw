@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     return post.en.summary;
   }
 
-  getPostImageUrl(post: BlogPost): string {
-    return this.blogService.getImageUrl(post.image);
+  getPostImageUrl(post: BlogPost, format?: 'jpg' | 'webp'): string {
+    return this.blogService.getImageUrl(post.image, format);
   }
 }

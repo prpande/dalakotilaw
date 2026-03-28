@@ -21,7 +21,10 @@
     color: var(--text-disabled) !important;
 }
 .btn-decline {
-    background-color: transparent !important;
-    color: var(--danger-color) !important;
-    border: 1px solid var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
+    color: white !important;
+    font-weight: 600;
+}
+.btn-decline:hover {
+    opacity: 0.9;
 }

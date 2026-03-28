@@ -24,6 +24,12 @@ A build-time Node.js script using `sharp` that compresses and converts blog imag
 - Deletes original `.png` files after optimization (replaced by the `.jpg` output)
 - Overwrites original `.jpg` files with the compressed version
 
+**Edge cases:**
+- Images smaller than 1200px wide are not upscaled — they are re-encoded at their original dimensions
+- If the optimized output is larger than the original (possible for already-small files), keep the smaller version
+- If `sharp` fails on a specific image, log a warning and continue processing remaining images (do not fail the build)
+- PNG-to-JPG conversion fills transparent areas with white — acceptable since blog images are photographs, not diagrams
+
 **Dependency:** `sharp` (dev dependency)
 
 **npm script:** `"optimize-images": "node scripts/optimize-blog-images.js"`
@@ -60,9 +66,9 @@ Three templates updated to use `<picture>` elements:
 - `loading="eager"` for article hero (above the fold)
 - `loading="lazy"` for all card images
 
-## 3. BlogService Changes
+## 3. BlogService and Component Changes
 
-**File:** `src/app/services/blog.service.ts`
+### BlogService (`src/app/services/blog.service.ts`)
 
 Update `getImageUrl()` to accept an optional format parameter:
 
@@ -75,6 +81,15 @@ getImageUrl(filename: string, format: 'jpg' | 'webp' = 'jpg'): string {
 
 The blog manifest (`index.json`) and markdown frontmatter continue referencing original filenames (e.g., `title-search.jpg`). The service handles format switching.
 
+### Component wrapper methods
+
+The following component methods must also be updated to pass through the format parameter:
+
+- **`blog.component.ts`** — `getImageUrl(post: BlogPost, format?: string)` delegates to `this.blogService.getImageUrl(post.image, format)`
+- **`home.component.ts`** — `getPostImageUrl(post: BlogPost, format?: string)` delegates to `this.blogService.getImageUrl(post.image, format)`
+- **`blog-post.component.html`** — already calls `blogService.getImageUrl()` directly, no wrapper needed
+- **SEO call in `blog-post.component.ts`** — continues using default (JPG) via `this.blogService.getImageUrl(image)` with no format argument
+
 ## 4. npm Scripts Integration
 
 Add to `package.json` scripts:
@@ -84,7 +99,15 @@ Add to `package.json` scripts:
 }
 ```
 
-Image optimization runs before `ng build` in the deployment workflow.
+The `deploy` script in `package.json` is updated to run optimization before the build:
+
+```
+"deploy": "node scripts/optimize-blog-images.js && ng build && shx cp -r dist/dalakotilaw/* docs/ && shx cp docs/index.html docs/404.html"
+```
+
+**Why this ordering works:** The optimize script writes to `docs/blog/images/`. The Angular build reads from `docs/blog/` (via the asset glob in `angular.json`: `{"glob": "**/*", "input": "docs/blog", "output": "/blog"}`), so optimized images are included in the build output. The subsequent `shx cp -r dist/dalakotilaw/* docs/` copies Angular output but does not contain a `blog/` directory, so it does not overwrite the optimized blog images already in `docs/blog/`.
+
+The `.optimized.json` manifest file is committed to the repo (small, useful for incremental builds). It will be publicly accessible at `/blog/images/.optimized.json` but contains only filenames and hashes — no sensitive data.
 
 ## 5. SEO Meta Images
 

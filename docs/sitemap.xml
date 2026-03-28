@@ -43,32 +43,92 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dalakotilaw.com/blog/civil-vs-criminal</loc>
-    <lastmod>2026-03-20</lastmod>
+    <loc>https://dalakotilaw.com/blog/sarfaesi-auction-myths</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dalakotilaw.com/blog/title-search</loc>
+    <loc>https://dalakotilaw.com/blog/termination-vs-discharge</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dalakotilaw.com/blog/charge-sheet-response</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://dalakotilaw.com/blog/civil-dispute-given-criminal-colour</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dalakotilaw.com/blog/documentation-mistakes</loc>
-    <lastmod>2026-03-12</lastmod>
+    <loc>https://dalakotilaw.com/blog/guarantor-and-mortgaged-property</loc>
+    <lastmod>2026-02-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/title-search-report-checklist</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/cheque-bounce-civil-and-criminal</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/before-signing-as-guarantor</loc>
+    <lastmod>2026-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dalakotilaw.com/blog/recovery-action-guide</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2025-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/charge-sheet-response</loc>
+    <lastmod>2025-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/sarfaesi-notice-checklist</loc>
+    <lastmod>2025-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/departmental-enquiry-mistakes</loc>
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/documentation-mistakes</loc>
+    <lastmod>2025-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/uttarakhand-hill-property-checks</loc>
+    <lastmod>2025-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/civil-vs-criminal</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dalakotilaw.com/blog/title-search</loc>
+    <lastmod>2025-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

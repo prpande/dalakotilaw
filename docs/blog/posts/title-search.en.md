@@ -1,6 +1,6 @@
 ---
 title: "Why Title Search Matters Before Mortgage, Purchase, or Loan Sanction"
-date: 2026-03-18
+date: 2025-08-12
 summary: "Title scrutiny is one of the most important risk-control steps in any property transaction or mortgage creation."
 tags: [property, banking]
 image: title-search.jpg

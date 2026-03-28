@@ -1,6 +1,6 @@
 ---
 title: "Civil Dispute or Criminal Case? Understanding the Difference"
-date: 2026-03-20
+date: 2025-09-03
 summary: "Not every serious dispute is a criminal case. Learn how to correctly classify financial and property conflicts."
 tags: [civil, criminal]
 image: civil-vs-criminal.jpg

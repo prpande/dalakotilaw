@@ -1,6 +1,6 @@
 ---
 title: "Common Documentation Mistakes in Banking and Recovery Matters"
-date: 2026-03-12
+date: 2025-10-08
 summary: "In banking and recovery work, documents do not merely support a case — they often become the case."
 tags: [banking, recovery]
 image: documentation-mistakes.jpg

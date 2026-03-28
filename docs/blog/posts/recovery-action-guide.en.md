@@ -1,6 +1,6 @@
 ---
 title: "Borrowers, Guarantors, and Recovery Action: A Practical Guide"
-date: 2026-03-10
+date: 2025-12-28
 summary: "A practical guide to understanding rights, duties, and common misunderstandings in banking recovery."
 tags: [banking, recovery, civil]
 image: recovery-action-guide.jpg

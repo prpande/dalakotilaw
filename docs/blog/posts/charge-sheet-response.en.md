@@ -1,6 +1,6 @@
 ---
 title: "What to Do After Receiving a Charge Sheet or Show Cause Notice"
-date: 2026-03-15
+date: 2025-12-05
 summary: "A practical guide for bank officers on how to respond to disciplinary proceedings carefully and effectively."
 tags: [banking, disciplinary]
 image: charge-sheet-response.jpg

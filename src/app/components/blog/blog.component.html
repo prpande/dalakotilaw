@@ -24,10 +24,10 @@
 
           <!-- Dropdown panel -->
           <div class="filter-dropdown" *ngIf="dropdownOpen">
-            <label *ngFor="let tag of allTags" class="filter-dropdown-item" (click)="toggleTag(tag); $event.stopPropagation()">
-              <input type="checkbox" [checked]="selectedTags.has(tag)">
+            <div *ngFor="let tag of allTags" class="filter-dropdown-item" (click)="toggleTag(tag); $event.stopPropagation()">
+              <input type="checkbox" [checked]="selectedTags.has(tag)" (click)="$event.preventDefault()">
               <span class="filter-dropdown-label">{{ tag }}</span>
-            </label>
+            </div>
             <div class="filter-dropdown-footer" *ngIf="selectedTags.size > 0">
               <button class="filter-clear-btn" (click)="clearFilters(); closeDropdown()">Clear all</button>
             </div>

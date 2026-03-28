@@ -85,8 +85,8 @@ The blog manifest (`index.json`) and markdown frontmatter continue referencing o
 
 The following component methods must also be updated to pass through the format parameter:
 
-- **`blog.component.ts`** — `getImageUrl(post: BlogPost, format?: string)` delegates to `this.blogService.getImageUrl(post.image, format)`
-- **`home.component.ts`** — `getPostImageUrl(post: BlogPost, format?: string)` delegates to `this.blogService.getImageUrl(post.image, format)`
+- **`blog.component.ts`** — `getImageUrl(post: BlogPost, format?: 'jpg' | 'webp')` delegates to `this.blogService.getImageUrl(post.image, format)`
+- **`home.component.ts`** — `getPostImageUrl(post: BlogPost, format?: 'jpg' | 'webp')` delegates to `this.blogService.getImageUrl(post.image, format)`
 - **`blog-post.component.html`** — already calls `blogService.getImageUrl()` directly, no wrapper needed
 - **SEO call in `blog-post.component.ts`** — continues using default (JPG) via `this.blogService.getImageUrl(image)` with no format argument
 

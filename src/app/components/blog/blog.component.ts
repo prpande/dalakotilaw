@@ -42,7 +42,7 @@ export class BlogComponent implements OnInit, OnDestroy {
     return post.en.summary;
   }
 
-  getImageUrl(post: BlogPost): string {
-    return this.blogService.getImageUrl(post.image);
+  getImageUrl(post: BlogPost, format?: 'jpg' | 'webp'): string {
+    return this.blogService.getImageUrl(post.image, format);
   }
 }

@@ -46,7 +46,7 @@ A native `<select>` with two options:
 All filtering happens client-side in `BlogComponent` — no API calls needed since all posts are loaded from `index.json`.
 
 - **Filter:** When tags are selected, show posts where the post's `tags` array has at least one tag in common with the selected tags (union/OR logic). When no tags are selected, show all posts.
-- **Sort:** Compare post `date` strings. "Newest first" = descending, "Oldest first" = ascending. Default: newest first.
+- **Sort:** Compare post `date` strings lexicographically. Dates are ISO 8601 format (`YYYY-MM-DD`) which sorts correctly as strings. "Newest first" = descending, "Oldest first" = ascending. Default: newest first.
 - **Pipeline:** Filter first, then sort. The component maintains a `filteredPosts: BlogPost[]` array derived from `posts` whenever filter or sort state changes.
 - **Empty state:** If no posts match the selected tags, show "No posts found for the selected topics." message centered in the grid area.
 
@@ -55,9 +55,9 @@ All filtering happens client-side in `BlogComponent` — no API calls needed sin
 Filter/sort state synced to the URL via Angular's `Router`:
 
 - **Format:** `/blog?tags=banking,recovery&sort=oldest`
-- **`tags` param:** Comma-separated tag slugs of active filters. Omitted when no filters are active (clean default URL).
+- **`tags` param:** Comma-separated tag values from `index.json`, used directly as URL parameter values. Tags are lowercase single words (e.g., `banking`, `recovery`). If multi-word tags are added in future, they should use hyphens (e.g., `corporate-law`). Omitted when no filters are active (clean default URL).
 - **`sort` param:** Value `oldest` when oldest-first is active. Omitted when newest-first (the default).
-- **On page load:** Read query params from `ActivatedRoute`, apply as initial filter/sort state.
+- **On page load:** Read query params from `ActivatedRoute.queryParamMap`. Validate tags against `allTags` — silently discard unknown tags and update the URL to remove them. If `sort` param has an invalid value, fall back to `'newest'` and strip the invalid param.
 - **On filter/sort change:** Update URL via `router.navigate` with `replaceUrl: true` to avoid polluting browser history with every filter click.
 
 ## 4. Component Changes
@@ -68,25 +68,29 @@ New state:
 - `selectedTags: Set<string>` — currently active tag filters
 - `sortOrder: 'newest' | 'oldest'` — current sort direction (default: `'newest'`)
 - `filteredPosts: BlogPost[]` — derived from `posts` after filter + sort
-- `allTags: string[]` — unique tags extracted from all posts
+- `allTags: string[]` — unique tags extracted from all posts, sorted alphabetically, populated once when posts load
 - `dropdownOpen: boolean` — controls dropdown visibility
 
+New constructor injections:
+- `ActivatedRoute` — to read query params on load
+- `Router` — to update query params on filter/sort change
+
 New methods:
-- `toggleTag(tag: string)` — add/remove tag from `selectedTags`, refilter, update URL
-- `removeTag(tag: string)` — remove a tag chip, refilter, update URL
+- `toggleTag(tag: string)` — add/remove tag from `selectedTags`, refilter, update URL (used by both dropdown checkboxes and chip × buttons)
 - `clearFilters()` — clear all tags, refilter, update URL
 - `setSortOrder(order: string)` — update sort, refilter, update URL
 - `toggleDropdown()` — open/close the filter dropdown
 - `applyFilters()` — private method that filters and sorts `posts` into `filteredPosts`
 - `syncToUrl()` — private method that writes current state to query params
-- `readFromUrl()` — private method called in `ngOnInit` to hydrate state from query params
+- `readFromUrl()` — private method called after posts load (inside the `getPosts` subscribe callback) to hydrate state from query params. Must run after `allTags` is populated so it can validate URL tags.
 
 ### BlogComponent Template (`blog.component.html`)
 
 - Add filter/sort controls section between page header and card grid
 - Card grid `*ngFor` iterates `filteredPosts` instead of `posts`
 - Add empty state `*ngIf` when `filteredPosts.length === 0`
-- Add `(click)` handler on document/overlay to close dropdown when clicking outside
+- Click-outside to close: use a transparent overlay `div` behind the dropdown (simpler than `@HostListener`, avoids event propagation issues)
+- Escape key closes the dropdown via `@HostListener('document:keydown.escape')`
 
 ### BlogComponent CSS (`blog.component.css`)
 
@@ -99,7 +103,7 @@ New styles for:
 - `.filter-chip-remove` — × button on chips (uses `--accent-color`)
 - `.sort-select` — sort dropdown styling
 - `.blog-empty-state` — no-results message
-- Responsive breakpoints consistent with existing blog card breakpoints
+- Responsive breakpoint at `768px` (`md`), consistent with the card grid's `col-md-6` breakpoint
 
 ## 5. Dependencies
 

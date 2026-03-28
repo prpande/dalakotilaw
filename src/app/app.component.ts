@@ -26,6 +26,9 @@ export class AppComponent implements OnInit, OnDestroy {
     this.seoService.init();
     this.updateUrl();
     this.langSub = this.translationService.lang$.subscribe(() => this.updateUrl());
+    document.addEventListener('contextmenu', e => {
+      if (e.target instanceof HTMLImageElement) e.preventDefault();
+    });
   }
 
   ngOnDestroy(): void {

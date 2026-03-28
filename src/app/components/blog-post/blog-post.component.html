@@ -16,7 +16,10 @@
 <!-- Article -->
 <ng-container *ngIf="article && !loading && !error">
   <div class="article-hero">
-    <img [src]="blogService.getImageUrl(article.post.image)" [alt]="getTitle()" class="article-hero-img">
+    <picture>
+      <source [srcset]="blogService.getImageUrl(article.post.image, 'webp')" type="image/webp">
+      <img [src]="blogService.getImageUrl(article.post.image, 'jpg')" [alt]="getTitle()" loading="eager" class="article-hero-img">
+    </picture>
   </div>
 
   <section class="section">

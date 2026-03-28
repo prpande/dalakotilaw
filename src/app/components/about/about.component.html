@@ -15,7 +15,10 @@
           <div class="card-body">
             <div class="row align-items-center">
               <div class="col-md-4 text-center mb-4 mb-md-0">
-                <img src="assets/images/profile.jpg" alt="Aditi Dalakoti" class="profile-photo">
+                <picture>
+                  <source srcset="assets/images/profile.webp" type="image/webp">
+                  <img src="assets/images/profile.jpg" alt="Aditi Dalakoti" class="profile-photo">
+                </picture>
                 <h3 class="profile-name mt-3 oxanium">{{ 'about.name' | translate }}</h3>
                 <p class="profile-title">{{ 'about.designation' | translate }}</p>
                 <a href="https://www.linkedin.com/in/aditi-dalakoti" target="_blank" rel="noopener noreferrer" class="linkedin-link mt-2">

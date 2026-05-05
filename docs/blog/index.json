@@ -1,5 +1,21 @@
 [
   {
+    "slug": "discharge-applications-criminal-trial",
+    "date": "2026-05-05",
+    "image": "discharge-applications-criminal-trial.jpg",
+    "tags": [
+      "criminal"
+    ],
+    "en": {
+      "title": "Discharge Applications Are Not Empty Formalities: Why Courts Must Test the Prosecution Case Before Trial",
+      "summary": "A discharge application tests whether the prosecution material, even at its highest, discloses the ingredients of the alleged offence. Criminal courts are not post offices for chargesheets."
+    },
+    "hi": {
+      "title": "डिस्चार्ज आवेदन कोरी औपचारिकताएं नहीं हैं: मुकदमे से पहले अदालतों को अभियोजन का परीक्षण क्यों करना चाहिए",
+      "summary": "एक डिस्चार्ज आवेदन यह परखता है कि क्या अभियोजन की सामग्री, उच्चतम स्तर पर स्वीकार किए जाने पर भी, कथित अपराध के तत्वों को प्रकट करती है। आपराधिक अदालतें चार्जशीट के लिए डाकघर नहीं हैं।"
+    }
+  },
+  {
     "slug": "sarfaesi-auction-myths",
     "date": "2026-03-28",
     "image": "sarfaesi-auction-myths.jpg",

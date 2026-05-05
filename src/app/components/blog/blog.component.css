@@ -48,6 +48,7 @@
 .card-title {
   font-size: 1.1rem;
   font-weight: 600;
+  line-height: 1.4;
   color: var(--text-dark);
   margin-bottom: 0.5rem;
 }

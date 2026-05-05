@@ -29,6 +29,7 @@
 .article-title {
   font-size: clamp(1.5rem, 4vw, 2.2rem);
   font-weight: 600;
+  line-height: 1.4;
   color: var(--text-dark);
   margin-bottom: 0.75rem;
 }
